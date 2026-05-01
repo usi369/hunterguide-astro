@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: 
+
+Sitemap: https://monchan-encyclopedia.pages.dev/sitemap.xml

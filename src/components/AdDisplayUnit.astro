@@ -1,0 +1,22 @@
+---
+interface Props {
+  slot: string;
+  format?: string;
+  responsive?: boolean;
+}
+
+const { slot, format = 'auto', responsive = true } = Astro.props;
+---
+
+<div class="my-4">
+  <ins
+    class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+    data-ad-slot={slot}
+    data-ad-format={format}
+    data-full-width-responsive={responsive}></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
