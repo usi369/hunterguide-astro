@@ -1,4 +1,4 @@
-const API_BASE = 'https://monchan3.xsrv.jp/api'
+const API_BASE = 'https://monchandb.com/api'
 
 export interface Monster {
   id: string
