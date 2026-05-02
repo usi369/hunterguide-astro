@@ -32,7 +32,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tobi-Kadachi.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tobi-Kadachi_i.png",
     "imageUrl": null,
     "weapons": [
       "双剣",
@@ -79,7 +79,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/seregios.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/seregios_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -135,7 +135,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/almudron.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/almudron_i.png",
     "imageUrl": null,
     "weapons": [
       "双剣",
@@ -157,9 +157,9 @@
   {
     "id": "61",
     "name": "ケマトリス",
-    "number": 61,
-    "species": "獣竜種",
-    "alias": "炎尾竜（えんびりゅう）",
+    "number": 60,
+    "species": "飛竜種",
+    "alias": "炎王竜（えんおうりゅう）",
     "grade": "通常種",
     "grades": [
       "通常種"
@@ -173,7 +173,7 @@
     ],
     "attackAttributes": [
       {
-        "image": "https://monchan3.xsrv.jp/images/attributes/element_fire.png",
+        "image": "https://s3.ap-northeast-1.amazonaws.com/staging.click-platform.dbfile/user34252/2025/10/17/0b7b86d0d90.png?AWSAccessKeyId=AKIA3JCH5IRY54KVZTMW&Expires=2076050065&Signature=dYL1SzXiB76o%2Bd6J0a1Rvu%2BIzY8%3D",
         "label": "火"
       }
     ],
@@ -182,8 +182,8 @@
     "quakeResist": "",
     "statusAilment": "",
     "note": "",
-    "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Quemantrice.png",
+    "rarePart": "背中",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Quematrice_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -230,7 +230,7 @@
     "statusAilment": "",
     "note": "興奮すると全身が赤くなり、注意が必要。氷の刃を生成して、武器として利用できる。",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Goss Harag.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Goss Harag_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -395,7 +395,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Malzeno.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Malzeno_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -448,7 +448,7 @@
     "statusAilment": "",
     "note": "植物や周囲の土砂を体液で固め、体に纏うことでその部位での攻撃を強化",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Garangolm.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Garangolm_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -503,7 +503,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lunagaron.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lunagaron_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -571,7 +571,7 @@
     "statusAilment": "",
     "note": "危険を感じると甲殻と翼膜の一部を赤く染めて凶暴化して暴れ回る",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Espinas.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Espinas_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -625,7 +625,7 @@
     "statusAilment": "",
     "note": "帯電状態中は「水属性攻撃」が極めて有効。弱点の頭部を破壊すると帯電状態を解除できる。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Fulgur Anjanath.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Fulgur Anjanath_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A2%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%8A%E3%83%95%E4%BA%9C%E7%A8%AE.png",
     "weapons": [
       "片手剣",
@@ -688,7 +688,7 @@
     "statusAilment": "",
     "note": "全身に水を纏った、雷を操る古龍。独自の発電器官を持っており、放出した水に向けて電撃を放ち、大爆発を巻き起こす。龍属性攻撃は、水纏いに有効。",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Namielle.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Namielle_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -747,7 +747,7 @@
     "statusAilment": "毒",
     "note": "バックステップした後に吐く毒が強力でガードで防げない",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Wroggi.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Wroggi_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -797,7 +797,7 @@
     "statusAilment": "毒、麻痺、閃光",
     "note": "柿に当たると状態異常を引き起こす。尻尾で立って駒のように立ち回る。尻尾立ち状態時、尻尾破壊でダウン。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Bishatten.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Bishaten_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -848,7 +848,7 @@
     "statusAilment": "",
     "note": "後脚が一番の弱点。頭部、銅、尻尾は、雪に覆われているため、ダメージが通りづらい。",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Barroth.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Barroth_i.png",
     "imageUrl": null,
     "weapons": [
       "双剣",
@@ -893,7 +893,7 @@
     "statusAilment": "裂傷",
     "note": "左右の刃翼を破壊するとダウンする。尻尾薙ぎ払いの棘状鱗は当たると裂傷状態となる。咆哮後、眼光が赤くなるが、睡眠状態で解除できる。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nargacuga.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nargacuga_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -956,7 +956,7 @@
     "statusAilment": "",
     "note": "姿が見えない間はロックオン不可。集中攻撃の怯み、角破壊で姿をうまく隠せなくなる。舌を使った攻撃でSPゲージを奪ってくる。",
     "rarePart": "角",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Chameleos.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Chameleos_i.png",
     "imageUrl": null,
     "weapons": [
       "双剣",
@@ -1016,7 +1016,7 @@
     "statusAilment": "裂傷",
     "note": "頭部と前脚を破壊すると弱体化する",
     "rarePart": "前脚",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Ebony Odogaron.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Ebony Odogaron_i.png",
     "imageUrl": null,
     "weapons": [
       "双剣",
@@ -1076,7 +1076,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "前脚",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lagombi.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lagombi_i.png",
     "imageUrl": null,
     "weapons": [
       "双剣",
@@ -1128,7 +1128,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Baroth.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Barroth_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -1183,7 +1183,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "前脚",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Chatacabra.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Chatacabra_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -1228,7 +1228,7 @@
     "statusAilment": "",
     "note": "爆鱗は、放たれる度に減っていく。攻撃によっても減らすことが可能で、部位破壊、気絶状態の他、飛行中でのダウンにて頭と尻尾の爆鱗をすべて無くすことができる。\\nまた、脚への一定ダメージによるダウンでもすべての爆鱗を無くすことができる。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Bazelgeuse.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Bazelgeuse_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%82%BC%E3%83%AB%E3%82%AE%E3%82%A6%E3%82%B9x.png",
     "weapons": [
       "双剣",
@@ -1282,7 +1282,7 @@
     "statusAilment": "麻痺（落雷攻撃）",
     "note": "雷纏い状態後、龍属性攻撃のダメージで怯ませることができ、雷纏いも解除できる",
     "rarePart": "角",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kirin.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kirin_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -1335,7 +1335,7 @@
     "statusAilment": "",
     "note": "前脚と頭部の部位破壊で大きな隙が生まれる",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tigrex.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tigrex_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%86%E3%82%A3%E3%82%AC%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9x.png",
     "weapons": [
       "片手剣",
@@ -1403,7 +1403,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Arzuros.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Arzuros_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A6%E3%83%AB%E3%82%AF%E3%82%B9sx.png",
     "weapons": [
       "双剣",
@@ -1450,7 +1450,7 @@
     "statusAilment": "麻痺、悪臭（一時SPゲージ回復不可、SPスキル使用不可）",
     "note": "",
     "rarePart": "背中",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lagombi.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lagombi_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%A9%E3%83%B3%E3%82%B0%E3%83%AD%E3%83%88%E3%83%A9x.png",
     "weapons": [
       "ハンマー",
@@ -1503,7 +1503,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Padumu.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Paolumu_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A4%E3%82%BD%E3%83%8D%E3%83%9F%E3%82%AF%E3%83%8Bx.png",
     "weapons": [
       "双剣",
@@ -1555,7 +1555,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nergigante.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nergigante_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%8D%E3%83%AD%E3%82%AE%E3%82%AC%E3%83%B3%E3%83%86.png",
     "weapons": [
       "片手剣",
@@ -1613,7 +1613,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Silver Rathalos.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Silver Rathalos_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A6%E3%82%B9%E5%B8%8C%E5%B0%91%E7%A8%AEa.png",
     "weapons": [
       "片手剣",
@@ -1669,7 +1669,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Gold Rathian.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Gold Rathian_1.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A4%E3%82%A2%E5%B8%8C%E5%B0%91%E7%A8%AEa.png",
     "weapons": [
       "片手剣太刀狩猟笛ガンランススラッシュアックスチャージアックスライトボウガンヘビィボウガン弓"
@@ -1711,7 +1711,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Aknosom.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Aknosom_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A2%E3%82%B1%E3%83%8E%E3%82%B7%E3%83%AB%E3%83%A0x.png",
     "weapons": [
       "双剣",
@@ -1762,7 +1762,7 @@
     "statusAilment": "",
     "note": "2つの強化状態があるが、尻尾部位破壊か睡眠状態にすることで、解除可能。尻尾部位破壊は、強化状態中のみ可能。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rajang.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rajang_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%A9%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%B3x.png",
     "weapons": [
       "片手剣",
@@ -1822,7 +1822,7 @@
     "statusAilment": "鬼火やられ",
     "note": "鬼火をまとった部位には雷属性が極めて有効。部位破壊することで鬼火を解除できる。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Magnamalo.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Magnamalo_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%9E%E3%82%AC%E3%82%A4%E3%83%9E%E3%82%AC%E3%83%89x.png",
     "weapons": [
       "片手剣",
@@ -1889,7 +1889,7 @@
     "statusAilment": "爆破やられ",
     "note": "炎纏い状態では、遠距離攻撃が効きにくい。頭部破壊で炎と粉塵を取り払える。炎には水属性攻撃、粉塵には氷属性攻撃が有効。一定ダメージを与えると取り払える。",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Teostra.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Teostra_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%86%E3%82%AA%E3%83%BB%E3%83%86%E3%82%B9%E3%82%AB%E3%83%88%E3%83%AB.png",
     "weapons": [
       "片手剣",
@@ -1943,7 +1943,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nightshade Paolumu.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nightshade Paolumu_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%82%AA%E3%82%A6%E3%83%AB%E3%83%A0%E3%83%BC%E4%BA%9C%E7%A8%AE.png",
     "weapons": [
       "片手剣",
@@ -2001,7 +2001,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Mizutsune.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Mizutsune_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -2063,7 +2063,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Coral Pukei-Pukei.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Coral Pukei-Pukei_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%96%E3%82%B1%E3%83%97%E3%82%B1%E4%BA%9C%E7%A8%AEx.png",
     "weapons": [
       "片手剣",
@@ -2122,7 +2122,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "角",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Black Diablos.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Black Diablos_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%87%E3%82%A3%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B9%E4%BA%9C%E7%A8%AEx.png",
     "weapons": [
       "双剣",
@@ -2181,7 +2181,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Azure Rathalos.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Azure Rathalos_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A6%E3%82%B9%E4%BA%9C%E7%A8%AEx.png",
     "weapons": [
       "片手剣",
@@ -2243,7 +2243,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾（切断のみ）",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Pink Rathian.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Pink Rathian_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A4%E3%82%A2%E4%BA%9C%E7%A8%AEx.png",
     "weapons": [
       "片手剣",
@@ -2305,7 +2305,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kushala Daora.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kushala Daora_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -2372,7 +2372,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Khezu.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Khezu_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%95%E3%83%AB%E3%83%95%E3%83%ABx.png",
     "weapons": [
       "片手剣",
@@ -2447,7 +2447,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Basarios.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Basarios_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%82%B5%E3%83%AB%E3%83%A2%E3%82%B9x.png",
     "weapons": [
       "太刀",
@@ -2506,7 +2506,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Deviljho.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Deviljho_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A4%E3%83%93%E3%83%AB%E3%82%B8%E3%83%A7%E3%83%BCx.png",
     "weapons": [
       "片手剣",
@@ -2569,7 +2569,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "前脚",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Odogaron.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Odogaron_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%AA%E3%83%89%E3%82%AC%E3%83%AD%E3%83%B3x.png",
     "weapons": [
       "双剣",
@@ -2619,7 +2619,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭（1回目、2回目）",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tzitzi-Ya-Ku.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tzitzi-Ya-Ku_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%84%E3%82%A3%E3%83%84%E3%82%A3%E3%83%A4%E3%83%83%E3%82%AFx.png",
     "weapons": [
       "双剣",
@@ -2668,7 +2668,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Zinogre.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Zinogre_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -2728,7 +2728,7 @@
     "statusAilment": "",
     "note": "翼の棘を破壊すると動きに隙が生まれる。棘は、打撃系の武器が効果的。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Beotodus.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Beotodus_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%99%E3%83%AA%E3%82%AA%E3%83%AD%E3%82%B9x.png",
     "weapons": [
       "片手剣",
@@ -2793,7 +2793,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "角",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Banbaro.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Banbaro_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%83%95%E3%83%90%E3%83%ADx.png",
     "weapons": [
       "双剣",
@@ -2854,7 +2854,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Radobaan.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Radobaan_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%A9%E3%83%89%E3%83%90%E3%83%AB%E3%82%AD%E3%83%B3x.png",
     "weapons": [
       "片手剣",
@@ -2911,7 +2911,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "角",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Diablos.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Diablos_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%87%E3%82%A3%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B9x.png",
     "weapons": [
       "双剣",
@@ -2972,7 +2972,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rathalos.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rathalos_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A6%E3%82%B9x.png",
     "weapons": [
       "片手剣",
@@ -3098,7 +3098,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾（切断のみ）",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rathian.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rathian_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A4%E3%82%A2x.png",
     "weapons": [
       "片手剣",
@@ -3151,7 +3151,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Anjanath.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Anjanath_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A2%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%8A%E3%83%95x.png",
     "weapons": [
       "片手剣",
@@ -3211,7 +3211,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Somnacanth.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Somnacanth_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%82%AA%E3%82%A6%E3%83%AB%E3%83%A0%E3%83%BCx.png",
     "weapons": [
       "片手剣",
@@ -3260,7 +3260,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Jyuratodus.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Jyuratodus_i.png",
     "imageUrl": null,
     "weapons": [
       "片手剣",
@@ -3321,7 +3321,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Astalos.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Astalos_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%88%E3%83%93%E3%82%AB%E3%82%AC%E3%83%81x.png",
     "weapons": [
       "片手剣",
@@ -3384,7 +3384,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Girros.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Girros_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%89%E3%82%B9%E3%82%AE%E3%83%AB%E3%82%AA%E3%82%B9x.png",
     "weapons": [
       "片手剣",
@@ -3441,7 +3441,7 @@
     "statusAilment": "",
     "note": "弱点は前脚か後ろ脚を狙い転倒させよう。泥を纏った箇所は硬いため、泥を剥がせる水属性の武器が有効となる。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Volvidon.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Volvidon_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%9C%E3%83%AB%E3%83%9C%E3%83%AD%E3%82%B9x.png",
     "weapons": [
       "片手剣",
@@ -3496,7 +3496,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾（切断のみ）",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Pukei-Pukei.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Pukei-Pukei_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%96%E3%82%B1%E3%83%97%E3%82%B1x.png",
     "weapons": [
       "片手剣",
@@ -3550,7 +3550,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kulu-Ya-Ku.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kulu-Ya-Ku_i.png",
     "imageUrl": null,
     "weapons": [
       "双剣",
@@ -3614,7 +3614,7 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "前脚",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Jagras.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Jagras_i.png",
     "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%89%E3%82%B9%E3%82%B8%E3%83%A3%E3%82%B0%E3%83%A9%E3%82%B9x.png",
     "weapons": [
       "片手剣",
