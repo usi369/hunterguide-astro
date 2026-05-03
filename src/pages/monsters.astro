@@ -12,9 +12,9 @@ const monsters = await getMonsters();
   description="モンスターハンターNowの全モンスター一覧。強さ、弱点、出現地などの詳子情報を確認できます。"
   url="https://monchan-encyclopedia.pages.dev/monsters"
 >
-  <div class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+  <div class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 pb-24">
     {/* Header */}
-    <div class="sticky top-0 bg-slate-800 border-b border-slate-700 z-10">
+    <div class="sticky top-0 bg-slate-800 border-b border-slate-700 z-20">
       <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
         <a href="/" class="text-white hover:text-blue-400 transition">
           ← ホーム
@@ -28,11 +28,6 @@ const monsters = await getMonsters();
     <div class="max-w-4xl mx-auto px-4 py-8">
       {monsters.length > 0 ? (
         <div>
-          {/* Advertisement */}
-          <div class="mb-8">
-            <AdDisplayUnit slot="4039552557" format="auto" responsive={true} />
-          </div>
-          
           <p class="text-slate-300 mb-6">
             全 {monsters.length} 体のモンスター
           </p>
@@ -49,6 +44,13 @@ const monsters = await getMonsters();
           </p>
         </div>
       )}
+    </div>
+
+    {/* Fixed Bottom Ad Banner */}
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-50 flex justify-center">
+      <div class="w-full">
+        <AdDisplayUnit slot="4039552557" format="auto" responsive={true} />
+      </div>
     </div>
   </div>
 </Layout>

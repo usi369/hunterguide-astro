@@ -8,7 +8,7 @@ import AdDisplayUnit from '../components/AdDisplayUnit.astro';
   description="モンスターハンターNowの全モンスター情報、属性別検索、詳子情報を提供しているダタベース。"
   url="https://monchan-encyclopedia.pages.dev"
 >
-  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-8">
+  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-8 pb-24">
     <div class="w-full max-w-md">
       {/* Header */}
       <div class="text-center mb-12">
@@ -55,11 +55,13 @@ import AdDisplayUnit from '../components/AdDisplayUnit.astro';
       <div class="mt-12 text-center text-sm text-gray-600">
         <p>✦ 64体のモンスターデータを収録 ✦</p>
       </div>
-      
-      {/* Advertisement */}
-      <div class="mt-8">
-        <AdDisplayUnit slot="8525592479" format="auto" responsive={true} />
-      </div>
+    </div>
+  </div>
+
+  {/* Fixed Bottom Ad Banner */}
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-50 flex justify-center">
+    <div class="w-full">
+      <AdDisplayUnit slot="8525592479" format="auto" responsive={true} />
     </div>
   </div>
 </Layout>
