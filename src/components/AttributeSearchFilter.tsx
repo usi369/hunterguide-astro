@@ -43,6 +43,26 @@ const ATTRIBUTES: Attribute[] = [
     label: '龍',
     iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_dragon.png',
   },
+  {
+    name: '毒',
+    label: '毒',
+    iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_poison.png',
+  },
+  {
+    name: '麻痺',
+    label: '麻痺',
+    iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_paralysis.png',
+  },
+  {
+    name: '睡眠',
+    label: '睡眠',
+    iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_sleep.png',
+  },
+  {
+    name: '爆破',
+    label: '爆破',
+    iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_blast.png',
+  },
 ];
 
 export default function AttributeSearchFilter({ monsters }: AttributeSearchFilterProps) {
@@ -116,7 +136,7 @@ export default function AttributeSearchFilter({ monsters }: AttributeSearchFilte
 
         {/* Monsters Grid */}
         {filteredMonsters.length > 0 ? (
-          <div className="grid grid-cols-5 gap-4">
+          <div className="grid grid-cols-8 gap-3">
             {filteredMonsters.map((monster) => (
               <a href={`/monsters/${monster.id}`} key={monster.id}>
                 <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden cursor-pointer h-full">
