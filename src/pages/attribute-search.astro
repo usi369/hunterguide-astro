@@ -12,9 +12,17 @@ const monsters = await getMonsters();
   description="モンスターハンターNowのモンスターを弱点属性で検索。火、水、雷、氷、龍属性を指定して検索できます。"
   url="https://monchan-encyclopedia.pages.dev/attribute-search"
 >
-  <div class="mb-8">
-    <AdDisplayUnit slot="3306379833" format="auto" responsive={true} />
+  <div class="relative">
+    <AttributeSearchFilter client:load monsters={monsters} />
+    
+    {/* Fixed Bottom Ad Banner */}
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-50 flex justify-center">
+      <div class="w-full">
+        <AdDisplayUnit slot="3306379833" format="auto" responsive={true} />
+      </div>
+    </div>
+    
+    {/* Spacer to prevent content from being hidden behind fixed ad */}
+    <div class="h-24"></div>
   </div>
-  
-  <AttributeSearchFilter client:load monsters={monsters} />
 </Layout>

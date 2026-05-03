@@ -76,9 +76,9 @@ export default function AttributeSearchFilter({ monsters }: AttributeSearchFilte
     : monsters;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 pb-24">
       {/* Header */}
-      <div className="sticky top-0 bg-slate-800 border-b border-slate-700 z-10">
+      <div className="sticky top-0 bg-slate-800 border-b border-slate-700 z-20">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <a href="/" className="text-white hover:text-blue-400 transition">
             ← ホーム
