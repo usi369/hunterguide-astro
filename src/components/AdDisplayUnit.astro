@@ -3,12 +3,13 @@ interface Props {
   slot: string;
   format?: string;
   responsive?: boolean;
+  compact?: boolean;
 }
 
-const { slot, format = 'auto', responsive = true } = Astro.props;
+const { slot, format = 'auto', responsive = true, compact = false } = Astro.props;
 ---
 
-<div class="my-4">
+<div class={compact ? 'my-0' : 'my-4'}>
   <ins
     class="adsbygoogle"
     style="display:block"

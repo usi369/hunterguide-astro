@@ -1,4 +1,4 @@
-const API_BASE = 'https://monchandb.com/api'
+import monstersData from '../data/monsters.json'
 
 export interface Monster {
   id: string
@@ -33,15 +33,5 @@ export interface Monster {
 }
 
 export async function getMonsters(): Promise<Monster[]> {
-  try {
-    const url = `${API_BASE}/monsters.json`
-    const response = await fetch(url)
-    if (!response.ok) {
-      throw new Error(`Failed to fetch monsters: ${response.status}`)
-    }
-    return await response.json()
-  } catch (error) {
-    console.error('Error fetching monsters:', error)
-    return []
-  }
+  return monstersData as Monster[]
 }

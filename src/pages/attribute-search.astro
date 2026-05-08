@@ -1,10 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import AttributeSearchFilter from '../components/AttributeSearchFilter';
-import AdDisplayUnit from '../components/AdDisplayUnit.astro';
+import MonsterCard from '../components/MonsterCard';
+import AdSmartBanner from '../components/AdSmartBanner.astro';
 import { getMonsters } from '../lib/api';
 
 const monsters = await getMonsters();
+const sortedMonsters = [...monsters].sort((a, b) => Number(b.number ?? b.id) - Number(a.number ?? a.id));
+const attributes = [
+  { label: '火', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_fire.png' },
+  { label: '水', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_water.png' },
+  { label: '雷', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_thunder.png' },
+  { label: '氷', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_ice.png' },
+  { label: '龍', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_dragon.png' },
+  { label: '毒', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_poison.png' },
+  { label: '麻痺', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_paralysis.png' },
+  { label: '睡眠', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_sleep.png' },
+  { label: '爆破', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_blast.png' },
+];
+const getWeakAttributes = (monster: any) => {
+  if (!Array.isArray(monster.weakAttributes)) return [];
+  return monster.weakAttributes
+    .map((attribute: any) => typeof attribute === 'string' ? attribute : attribute?.label)
+    .filter(Boolean);
+};
 ---
 
 <Layout 
@@ -12,17 +30,126 @@ const monsters = await getMonsters();
   description="モンスターハンターNowのモンスターを弱点属性で検索。火、水、雷、氷、龍属性を指定して検索できます。"
   url="https://monchan-encyclopedia.pages.dev/attribute-search"
 >
-  <div class="relative">
-    <AttributeSearchFilter client:load monsters={monsters} />
-    
-    {/* Fixed Bottom Ad Banner */}
-    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-50 flex justify-center">
-      <div class="w-full">
-        <AdDisplayUnit slot="3306379833" format="auto" responsive={true} />
+  <div class="min-h-screen bg-slate-50 pb-24">
+    {/* Header */}
+    <div class="sticky top-0 bg-white/95 border-b border-slate-200 shadow-sm backdrop-blur z-20">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+        <a href="/" class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-black text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:text-blue-900 hover:shadow-md sm:px-4">
+          ← 戻る
+        </a>
+        <div class="min-w-0 text-center">
+          <h1 class="truncate text-2xl font-bold text-blue-900 tracking-normal sm:text-3xl">
+            属性別検索
+          </h1>
+          <p class="hidden text-xs font-bold text-gray-500 sm:block">
+            Attribute Search
+          </p>
+        </div>
+        <a href="/monsters" class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-black text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          一覧へ
+        </a>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <div class="mb-6 w-fit max-w-full overflow-x-auto rounded-[26px] border border-white bg-white/80 p-2 shadow-[0_16px_40px_rgba(15,23,42,0.08)] ring-1 ring-slate-200/70 backdrop-blur">
+        <div class="flex w-max items-center gap-2 rounded-[22px] bg-slate-100/80 p-1.5">
+          <button
+            type="button"
+            class="attribute-filter group relative whitespace-nowrap rounded-full bg-slate-950 px-4 py-2.5 text-xs font-black text-white shadow-[0_10px_24px_rgba(15,23,42,0.22)] transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100 sm:px-5 sm:text-sm"
+            data-attribute="ALL"
+            aria-pressed="true"
+          >
+            <span data-active-dot class="mr-1.5 inline-block h-2 w-2 rounded-full bg-red-500 align-middle transition"></span>
+            ALL
+          </button>
+
+          {attributes.map((attribute) => (
+            <button
+              type="button"
+              class="attribute-filter group relative flex items-center gap-2 whitespace-nowrap rounded-full bg-white/75 px-3 py-2 text-xs font-black text-slate-600 shadow-sm ring-1 ring-slate-200/80 transition duration-200 hover:bg-white hover:text-slate-950 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100 sm:px-4 sm:text-sm"
+              data-attribute={attribute.label}
+              aria-pressed="false"
+            >
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-slate-100 ring-1 ring-slate-200">
+                <img src={attribute.iconUrl} alt="" class="h-5 w-5 object-contain" loading="lazy" />
+              </span>
+              {attribute.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="mb-5 flex items-center justify-between gap-3">
+        <p class="text-sm font-black text-slate-500">
+          <span id="attribute-filter-label">全</span> <span id="attribute-filter-count">{sortedMonsters.length}</span> 体
+        </p>
+        <div class="h-px flex-1 bg-gradient-to-r from-slate-200 to-transparent"></div>
+      </div>
+
+      <div class="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-x-2 gap-y-8 sm:gap-x-3">
+        {sortedMonsters.map((monster) => (
+          <div class="attribute-monster-card" data-weak-attributes={getWeakAttributes(monster).join('|')}>
+            <MonsterCard key={monster.id} monster={monster} />
+          </div>
+        ))}
+      </div>
+
+      <div id="attribute-filter-empty" class="hidden rounded-2xl bg-white px-4 py-12 text-center shadow-sm">
+        <p class="text-base font-bold text-slate-500">
+          選択した属性が弱点のモンスターはまだ登録されていません
+        </p>
       </div>
     </div>
     
-    {/* Spacer to prevent content from being hidden behind fixed ad */}
-    <div class="h-24"></div>
+    <AdSmartBanner adSlot="3306379833" format="horizontal" responsive={true} />
   </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.attribute-filter');
+    const cards = document.querySelectorAll('.attribute-monster-card');
+    const count = document.querySelector('#attribute-filter-count');
+    const label = document.querySelector('#attribute-filter-label');
+    const empty = document.querySelector('#attribute-filter-empty');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const selected = button.getAttribute('data-attribute') || 'ALL';
+        let visibleCount = 0;
+
+        buttons.forEach((item) => {
+          const active = item === button;
+          item.setAttribute('aria-pressed', String(active));
+          item.classList.toggle('bg-slate-950', active);
+          item.classList.toggle('text-white', active);
+          item.classList.toggle('shadow-[0_10px_24px_rgba(15,23,42,0.22)]', active);
+          item.classList.toggle('bg-white/75', !active);
+          item.classList.toggle('text-slate-600', !active);
+          item.classList.toggle('shadow-sm', !active);
+          item.classList.toggle('ring-1', !active);
+          item.classList.toggle('ring-slate-200/80', !active);
+          item.classList.toggle('hover:bg-white', !active);
+          item.classList.toggle('hover:text-slate-950', !active);
+          item.classList.toggle('hover:shadow-md', !active);
+
+          const dot = item.querySelector('[data-active-dot]');
+          if (dot) {
+            dot.classList.toggle('bg-red-500', active);
+            dot.classList.toggle('bg-slate-300', !active);
+          }
+        });
+
+        cards.forEach((card) => {
+          const attributes = (card.getAttribute('data-weak-attributes') || '').split('|');
+          const visible = selected === 'ALL' || attributes.includes(selected);
+          card.classList.toggle('hidden', !visible);
+          if (visible) visibleCount += 1;
+        });
+
+        if (label) label.textContent = selected === 'ALL' ? '全' : `${selected}弱点`;
+        if (count) count.textContent = String(visibleCount);
+        if (empty) empty.classList.toggle('hidden', visibleCount > 0);
+      });
+    });
+  </script>
 </Layout>
