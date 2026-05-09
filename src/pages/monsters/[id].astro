@@ -58,7 +58,7 @@ const gradeColor: Record<string, string> = {
   次元臨界: 'bg-rose-700',
 };
 
-const monsterSystemId = monster.id || '';
+const monsterNumber = monster.number ? String(monster.number).padStart(4, '0') : '';
 ---
 
 <Layout 
@@ -66,56 +66,63 @@ const monsterSystemId = monster.id || '';
   description={monster.description || `${monster.name}の詳子情報、弱点、出現地を確認。`}
   url={`https://monchan-encyclopedia.pages.dev/monsters/${monster.id}`}
 >
-  <div class="min-h-screen bg-sky-200 pb-24">
+  <div class="min-h-screen bg-slate-50 pb-24">
     {/* Header */}
     <div class="sticky top-0 bg-white/95 border-b border-slate-200 shadow-sm backdrop-blur z-20">
-      <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/monsters" class="text-sm font-bold text-slate-700 hover:text-red-600 transition">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="/monsters" class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-black text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:text-blue-900 hover:shadow-md sm:px-4">
           ← 一覧
         </a>
-        <a href="/" class="text-2xl font-black text-red-600 drop-shadow-[2px_2px_0_rgba(15,23,42,0.9)] tracking-normal">
-          モンちゃんDB
+        <div class="min-w-0 text-center">
+          <h1 class="truncate text-xl font-bold text-blue-900 tracking-normal sm:text-2xl">
+            モンスター詳細
+          </h1>
+          <p class="hidden text-xs font-bold text-gray-500 sm:block">
+            Monster Detail
+          </p>
+        </div>
+        <a href="/" class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-black text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:text-blue-900 hover:shadow-md sm:px-4">
+          TOP
         </a>
-        <div class="w-10"></div>
       </div>
     </div>
 
     {/* Content */}
-    <div class="max-w-3xl mx-auto px-2 sm:px-4 py-2 sm:py-4">
+    <div class="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
       <div class="space-y-3 sm:space-y-4">
-        <section class="overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
-          <div class="bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.9)_0_10%,transparent_11%_100%)] bg-[length:76px_76px] px-4 pb-5 pt-6">
-            <div class="flex min-h-60 items-center justify-center px-2">
+        <section class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
+          <div class="relative bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.95)_0_10%,transparent_11%_100%)] bg-[length:76px_76px] px-4 pb-5 pt-5 sm:px-6">
+            <div class="flex min-h-[20rem] items-center justify-center px-2 pb-2 pt-4 sm:min-h-[26rem] sm:pt-6">
             {monster.imageUrl ? (
               <img
                 src={monster.imageUrl}
                 alt={monster.name}
-                class="max-h-64 w-full object-contain drop-shadow-xl"
+                class="max-h-80 w-full object-contain drop-shadow-xl sm:max-h-[24rem]"
               />
             ) : (
-              <div class="flex h-52 w-full max-w-sm items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-white/60 text-sm font-bold text-slate-400">
+              <div class="flex h-72 w-full max-w-sm items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-white/60 text-sm font-bold text-slate-400">
                 モンスター画像未登録
               </div>
             )}
             </div>
-            <div class="mt-4 rounded-2xl bg-white/95 p-5 text-center shadow-lg">
-              {monsterSystemId && (
-                <p class="mb-1 text-xs font-black tracking-wide text-slate-400">ID: {monsterSystemId}</p>
+            <div class="relative rounded-2xl bg-white/95 p-5 pt-14 text-center shadow-lg ring-1 ring-slate-200/70 sm:pt-12">
+              <div class="absolute left-4 top-4 flex flex-wrap items-start gap-2 sm:left-5">
+                {monster.species && (
+                  <span class="rounded-full bg-sky-600 px-4 py-1.5 text-xs font-black text-white shadow-sm sm:text-sm">{monster.species}</span>
+                )}
+                {chips.grade.map((grade: string) => (
+                  <span class={`rounded-full px-4 py-1.5 text-xs font-black text-white shadow-sm sm:text-sm ${gradeColor[grade] || 'bg-slate-600'}`}>
+                    {grade}
+                  </span>
+                ))}
+              </div>
+              {monsterNumber && (
+                <p class="mb-1 text-xs font-black tracking-wide text-slate-400">No.{monsterNumber}</p>
               )}
               <h1 class="text-2xl sm:text-3xl font-black text-blue-950 tracking-normal">{monster.name}</h1>
               {monster.alias && (
                 <p class="mt-2 text-sm sm:text-base font-bold text-slate-500">{monster.alias}</p>
               )}
-              <div class="mt-4 flex flex-wrap justify-center gap-2">
-                {monster.species && (
-                  <span class="rounded-full bg-sky-600 px-4 py-1.5 text-sm font-black text-white">{monster.species}</span>
-                )}
-                {chips.grade.map((grade: string) => (
-                  <span class={`rounded-full px-4 py-1.5 text-sm font-black text-white ${gradeColor[grade] || 'bg-slate-600'}`}>
-                    {grade}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
         </section>

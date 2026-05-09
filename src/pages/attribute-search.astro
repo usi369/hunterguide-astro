@@ -16,11 +16,14 @@ const attributes = [
   { label: '麻痺', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_paralysis.png' },
   { label: '睡眠', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_sleep.png' },
   { label: '爆破', iconUrl: 'https://pub-14ced31a180247fcb2f291b43046e2f4.r2.dev/element_blast.png' },
+  { label: '無属性', iconUrl: '', mode: 'attack' },
 ];
-const getWeakAttributes = (monster: any) => {
-  if (!Array.isArray(monster.weakAttributes)) return [];
-  return monster.weakAttributes
+const normalizeAttributeLabel = (label: string) => label === '無属性' ? label : label.replace(/属性$/, '');
+const getAttributeLabels = (attributes: any[] | undefined) => {
+  if (!Array.isArray(attributes)) return [];
+  return attributes
     .map((attribute: any) => typeof attribute === 'string' ? attribute : attribute?.label)
+    .map((label: string) => normalizeAttributeLabel(label))
     .filter(Boolean);
 };
 ---
@@ -52,6 +55,27 @@ const getWeakAttributes = (monster: any) => {
     </div>
 
     <div class="max-w-7xl mx-auto px-4 py-8">
+      <div class="mb-4 w-fit max-w-full rounded-[24px] border border-white bg-white/80 p-1.5 shadow-[0_14px_34px_rgba(15,23,42,0.08)] ring-1 ring-slate-200/70 backdrop-blur">
+        <div class="grid grid-cols-2 gap-1 rounded-[18px] bg-slate-100/80 p-1">
+          <button
+            type="button"
+            class="attribute-mode rounded-full bg-slate-950 px-5 py-2.5 text-xs font-black text-white shadow-[0_10px_24px_rgba(15,23,42,0.20)] transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100 sm:text-sm"
+            data-mode="weak"
+            aria-pressed="true"
+          >
+            弱点属性
+          </button>
+          <button
+            type="button"
+            class="attribute-mode rounded-full bg-white/75 px-5 py-2.5 text-xs font-black text-slate-600 shadow-sm ring-1 ring-slate-200/80 transition duration-200 hover:bg-white hover:text-slate-950 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100 sm:text-sm"
+            data-mode="attack"
+            aria-pressed="false"
+          >
+            攻撃属性
+          </button>
+        </div>
+      </div>
+
       <div class="mb-6 w-fit max-w-full overflow-x-auto rounded-[26px] border border-white bg-white/80 p-2 shadow-[0_16px_40px_rgba(15,23,42,0.08)] ring-1 ring-slate-200/70 backdrop-blur">
         <div class="flex w-max items-center gap-2 rounded-[22px] bg-slate-100/80 p-1.5">
           <button
@@ -69,10 +93,15 @@ const getWeakAttributes = (monster: any) => {
               type="button"
               class="attribute-filter group relative flex items-center gap-2 whitespace-nowrap rounded-full bg-white/75 px-3 py-2 text-xs font-black text-slate-600 shadow-sm ring-1 ring-slate-200/80 transition duration-200 hover:bg-white hover:text-slate-950 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100 sm:px-4 sm:text-sm"
               data-attribute={attribute.label}
+              data-mode-only={attribute.mode || ''}
               aria-pressed="false"
             >
               <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-slate-100 ring-1 ring-slate-200">
-                <img src={attribute.iconUrl} alt="" class="h-5 w-5 object-contain" loading="lazy" />
+                {attribute.iconUrl ? (
+                  <img src={attribute.iconUrl} alt="" class="h-5 w-5 object-contain" loading="lazy" />
+                ) : (
+                  <span class="h-3 w-3 rounded-full bg-slate-400"></span>
+                )}
               </span>
               {attribute.label}
             </button>
@@ -89,7 +118,11 @@ const getWeakAttributes = (monster: any) => {
 
       <div class="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-x-2 gap-y-8 sm:gap-x-3">
         {sortedMonsters.map((monster) => (
-          <div class="attribute-monster-card" data-weak-attributes={getWeakAttributes(monster).join('|')}>
+          <div
+            class="attribute-monster-card"
+            data-weak-attributes={getAttributeLabels(monster.weakAttributes).join('|')}
+            data-attack-attributes={getAttributeLabels(monster.attackAttributes).join('|')}
+          >
             <MonsterCard key={monster.id} monster={monster} />
           </div>
         ))}
@@ -97,7 +130,7 @@ const getWeakAttributes = (monster: any) => {
 
       <div id="attribute-filter-empty" class="hidden rounded-2xl bg-white px-4 py-12 text-center shadow-sm">
         <p class="text-base font-bold text-slate-500">
-          選択した属性が弱点のモンスターはまだ登録されていません
+          選択した条件に一致するモンスターはまだ登録されていません
         </p>
       </div>
     </div>
@@ -106,50 +139,112 @@ const getWeakAttributes = (monster: any) => {
   </div>
 
   <script>
+    const modes = document.querySelectorAll('.attribute-mode');
     const buttons = document.querySelectorAll('.attribute-filter');
     const cards = document.querySelectorAll('.attribute-monster-card');
     const count = document.querySelector('#attribute-filter-count');
     const label = document.querySelector('#attribute-filter-label');
     const empty = document.querySelector('#attribute-filter-empty');
+    let currentMode = 'weak';
+    const selectedAttributes = new Set();
+
+    const setModeActive = (activeButton) => {
+      modes.forEach((item) => {
+        const active = item === activeButton;
+        item.setAttribute('aria-pressed', String(active));
+        item.classList.toggle('bg-slate-950', active);
+        item.classList.toggle('text-white', active);
+        item.classList.toggle('shadow-[0_10px_24px_rgba(15,23,42,0.20)]', active);
+        item.classList.toggle('bg-white/75', !active);
+        item.classList.toggle('text-slate-600', !active);
+        item.classList.toggle('shadow-sm', !active);
+        item.classList.toggle('ring-1', !active);
+        item.classList.toggle('ring-slate-200/80', !active);
+        item.classList.toggle('hover:bg-white', !active);
+        item.classList.toggle('hover:text-slate-950', !active);
+        item.classList.toggle('hover:shadow-md', !active);
+      });
+    };
+
+    const setAttributeActive = () => {
+      buttons.forEach((item) => {
+        const attribute = item.getAttribute('data-attribute') || 'ALL';
+        const active = attribute === 'ALL' ? selectedAttributes.size === 0 : selectedAttributes.has(attribute);
+        item.setAttribute('aria-pressed', String(active));
+        item.classList.toggle('bg-slate-950', active);
+        item.classList.toggle('text-white', active);
+        item.classList.toggle('shadow-[0_10px_24px_rgba(15,23,42,0.22)]', active);
+        item.classList.toggle('bg-white/75', !active);
+        item.classList.toggle('text-slate-600', !active);
+        item.classList.toggle('shadow-sm', !active);
+        item.classList.toggle('ring-1', !active);
+        item.classList.toggle('ring-slate-200/80', !active);
+        item.classList.toggle('hover:bg-white', !active);
+        item.classList.toggle('hover:text-slate-950', !active);
+        item.classList.toggle('hover:shadow-md', !active);
+
+        const dot = item.querySelector('[data-active-dot]');
+        if (dot) {
+          dot.classList.toggle('bg-red-500', active);
+          dot.classList.toggle('bg-slate-300', !active);
+        }
+      });
+    };
+
+    const applyFilter = () => {
+      let visibleCount = 0;
+      const dataAttribute = currentMode === 'attack' ? 'data-attack-attributes' : 'data-weak-attributes';
+
+      buttons.forEach((button) => {
+        const modeOnly = button.getAttribute('data-mode-only') || '';
+        const visible = !modeOnly || modeOnly === currentMode;
+        button.classList.toggle('hidden', !visible);
+
+        if (!visible) {
+          selectedAttributes.delete(button.getAttribute('data-attribute') || '');
+        }
+      });
+
+      setAttributeActive();
+
+      cards.forEach((card) => {
+        const attributes = (card.getAttribute(dataAttribute) || '').split('|');
+        const visible = selectedAttributes.size === 0 || [...selectedAttributes].every((attribute) => attributes.includes(attribute));
+        card.classList.toggle('hidden', !visible);
+        if (visible) visibleCount += 1;
+      });
+
+      const modeLabel = currentMode === 'attack' ? '攻撃属性' : '弱点属性';
+      const selectedLabel = selectedAttributes.size === 0 ? '全' : [...selectedAttributes].join('・');
+      if (label) label.textContent = `${selectedLabel} ${modeLabel}`;
+      if (count) count.textContent = String(visibleCount);
+      if (empty) empty.classList.toggle('hidden', visibleCount > 0);
+    };
+
+    modes.forEach((button) => {
+      button.addEventListener('click', () => {
+        currentMode = button.getAttribute('data-mode') || 'weak';
+        setModeActive(button);
+        applyFilter();
+      });
+    });
 
     buttons.forEach((button) => {
       button.addEventListener('click', () => {
-        const selected = button.getAttribute('data-attribute') || 'ALL';
-        let visibleCount = 0;
+        const attribute = button.getAttribute('data-attribute') || 'ALL';
 
-        buttons.forEach((item) => {
-          const active = item === button;
-          item.setAttribute('aria-pressed', String(active));
-          item.classList.toggle('bg-slate-950', active);
-          item.classList.toggle('text-white', active);
-          item.classList.toggle('shadow-[0_10px_24px_rgba(15,23,42,0.22)]', active);
-          item.classList.toggle('bg-white/75', !active);
-          item.classList.toggle('text-slate-600', !active);
-          item.classList.toggle('shadow-sm', !active);
-          item.classList.toggle('ring-1', !active);
-          item.classList.toggle('ring-slate-200/80', !active);
-          item.classList.toggle('hover:bg-white', !active);
-          item.classList.toggle('hover:text-slate-950', !active);
-          item.classList.toggle('hover:shadow-md', !active);
+        if (attribute === 'ALL') {
+          selectedAttributes.clear();
+        } else if (selectedAttributes.has(attribute)) {
+          selectedAttributes.delete(attribute);
+        } else {
+          selectedAttributes.add(attribute);
+        }
 
-          const dot = item.querySelector('[data-active-dot]');
-          if (dot) {
-            dot.classList.toggle('bg-red-500', active);
-            dot.classList.toggle('bg-slate-300', !active);
-          }
-        });
-
-        cards.forEach((card) => {
-          const attributes = (card.getAttribute('data-weak-attributes') || '').split('|');
-          const visible = selected === 'ALL' || attributes.includes(selected);
-          card.classList.toggle('hidden', !visible);
-          if (visible) visibleCount += 1;
-        });
-
-        if (label) label.textContent = selected === 'ALL' ? '全' : `${selected}弱点`;
-        if (count) count.textContent = String(visibleCount);
-        if (empty) empty.classList.toggle('hidden', visibleCount > 0);
+        applyFilter();
       });
     });
+
+    applyFilter();
   </script>
 </Layout>

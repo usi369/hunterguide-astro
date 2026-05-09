@@ -2,8 +2,12 @@ import monstersData from '../data/monsters.json'
 
 export interface Monster {
   id: string
+  number?: number
   name: string
   description: string
+  alias?: string
+  grade?: string
+  grades?: string[]
   iconUrl?: string
   imageUrl?: string
   size: string
@@ -30,6 +34,7 @@ export interface Monster {
   species?: string
   threat?: string
   initialTitle?: string
+  weapons?: string[]
 }
 
 export async function getMonsters(): Promise<Monster[]> {
