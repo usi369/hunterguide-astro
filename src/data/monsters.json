@@ -1,6 +1,6 @@
 [
   {
-    "id": "64",
+    "id": "9vN2mR8p",
     "name": "トビカガチ亜種",
     "number": 64,
     "species": "牙竜種",
@@ -32,8 +32,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tobi-Kadachi_i.png",
-    "imageUrl": null,
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Viper%20Tobi-Kadachi_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/ViperTobiKadachi.png",
     "weapons": [
       "双剣",
       "太刀",
@@ -51,7 +51,7 @@
     "public": true
   },
   {
-    "id": "63",
+    "id": "kX5wT9qL",
     "name": "セルレギオス",
     "number": 63,
     "species": "飛竜種",
@@ -80,7 +80,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/seregios_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Seregios.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -107,7 +107,7 @@
     "public": true
   },
   {
-    "id": "62",
+    "id": "3bM7zH4j",
     "name": "オロミドロ",
     "number": 62,
     "species": "海竜種",
@@ -136,7 +136,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/almudron_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Almudron.png",
     "weapons": [
       "双剣",
       "太刀",
@@ -155,9 +155,9 @@
     "public": true
   },
   {
-    "id": "61",
+    "id": "fR8tP2nB",
     "name": "ケマトリス",
-    "number": 60,
+    "number": 61,
     "species": "飛竜種",
     "alias": "炎王竜（えんおうりゅう）",
     "grade": "通常種",
@@ -184,7 +184,7 @@
     "note": "",
     "rarePart": "背中",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Quematrice_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Quematrice.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -202,7 +202,7 @@
     "public": true
   },
   {
-    "id": "60",
+    "id": "G6sD4mYw",
     "name": "ゴシャハギ",
     "number": 60,
     "species": "牙獣種",
@@ -230,8 +230,8 @@
     "statusAilment": "",
     "note": "興奮すると全身が赤くなり、注意が必要。氷の刃を生成して、武器として利用できる。",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Goss Harag_i.png",
-    "imageUrl": null,
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Goss%20Harag_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/GossHarag.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -250,7 +250,7 @@
     "public": true
   },
   {
-    "id": "59",
+    "id": "jL1kX9vC",
     "name": "ライゼクス",
     "number": 59,
     "species": "飛竜種",
@@ -283,7 +283,7 @@
     "note": "",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Astalos_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Astalos.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -309,7 +309,7 @@
     "public": true
   },
   {
-    "id": "58",
+    "id": "5hP3nS7r",
     "name": "ティガレックス亜種",
     "number": 58,
     "species": "飛竜種",
@@ -341,8 +341,8 @@
     "statusAilment": "",
     "note": "頭破壊でダメージ咆哮を弱体化できる?",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Brute Tigrex.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%86%E3%82%A3%E3%82%AC%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9%E4%BA%9C%E7%A8%AE.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Brute%20Tigrex.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/BruteTigrex.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -367,7 +367,7 @@
     "public": true
   },
   {
-    "id": "57",
+    "id": "W2tG8qMf",
     "name": "メル・ゼナ",
     "number": 57,
     "species": "古龍種",
@@ -396,7 +396,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Malzeno_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Malzeno.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -420,7 +420,7 @@
     "public": true
   },
   {
-    "id": "56",
+    "id": "9kZ1vX4y",
     "name": "ガランゴルム",
     "number": 56,
     "species": "牙獣種",
@@ -449,7 +449,7 @@
     "note": "植物や周囲の土砂を体液で固め、体に纏うことでその部位での攻撃を強化",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Garangolm_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Garangolm.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -475,7 +475,7 @@
     "public": true
   },
   {
-    "id": "55",
+    "id": "bM6tH2rN",
     "name": "ルナガロン",
     "number": 55,
     "species": "牙竜種",
@@ -504,7 +504,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lunagaron_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Lunagaron.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -531,7 +531,7 @@
     "public": true
   },
   {
-    "id": "54",
+    "id": "7vC4kX9p",
     "name": "エスピナス",
     "number": 54,
     "species": "飛竜種",
@@ -572,7 +572,7 @@
     "note": "危険を感じると甲殻と翼膜の一部を赤く染めて凶暴化して暴れ回る",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Espinas_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Espinas.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -597,7 +597,7 @@
     "public": true
   },
   {
-    "id": "53",
+    "id": "D8mS3n2w",
     "name": "アンジャナフ亜種",
     "number": 53,
     "species": "獣竜種",
@@ -625,8 +625,8 @@
     "statusAilment": "",
     "note": "帯電状態中は「水属性攻撃」が極めて有効。弱点の頭部を破壊すると帯電状態を解除できる。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Fulgur Anjanath_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A2%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%8A%E3%83%95%E4%BA%9C%E7%A8%AE.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Fulgur%20Anjanath_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/FulgurAnjanath.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -652,7 +652,7 @@
     "public": true
   },
   {
-    "id": "52",
+    "id": "gP5vT9rL",
     "name": "ネロミェール",
     "number": 52,
     "species": "古龍種",
@@ -689,7 +689,7 @@
     "note": "全身に水を纏った、雷を操る古龍。独自の発電器官を持っており、放出した水に向けて電撃を放ち、大爆発を巻き起こす。龍属性攻撃は、水纏いに有効。",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Namielle_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Namielle.png",
     "weapons": [
       "片手剣",
       "太刀",
@@ -711,7 +711,7 @@
     "public": true
   },
   {
-    "id": "51",
+    "id": "X4yZ1k3m",
     "name": "ドスフロギィ",
     "number": 51,
     "species": "鳥竜種",
@@ -747,8 +747,8 @@
     "statusAilment": "毒",
     "note": "バックステップした後に吐く毒が強力でガードで防げない",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Wroggi_i.png",
-    "imageUrl": null,
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great%20Wroggi_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/GreatWroggi.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -765,7 +765,7 @@
     "public": true
   },
   {
-    "id": "50",
+    "id": "2hR7tP9j",
     "name": "ビシュテンゴ",
     "number": 50,
     "species": "牙獣種",
@@ -798,7 +798,7 @@
     "note": "柿に当たると状態異常を引き起こす。尻尾で立って駒のように立ち回る。尻尾立ち状態時、尻尾破壊でダウン。",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Bishaten_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Bishaten.png",
     "weapons": [
       "片手剣",
       "ハンマー",
@@ -816,7 +816,7 @@
     "public": true
   },
   {
-    "id": "49",
+    "id": "6vN4mX8s",
     "name": "ブラントドス",
     "number": 49,
     "species": "魚竜種",
@@ -848,8 +848,8 @@
     "statusAilment": "",
     "note": "後脚が一番の弱点。頭部、銅、尻尾は、雪に覆われているため、ダメージが通りづらい。",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Barroth_i.png",
-    "imageUrl": null,
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Beotodus_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Beotodus.png",
     "weapons": [
       "双剣",
       "大剣",
@@ -865,7 +865,7 @@
     "public": true
   },
   {
-    "id": "48",
+    "id": "kL9wT2qf",
     "name": "ナルガクルガ",
     "number": 48,
     "species": "飛竜種",
@@ -894,7 +894,7 @@
     "note": "左右の刃翼を破壊するとダウンする。尻尾薙ぎ払いの棘状鱗は当たると裂傷状態となる。咆哮後、眼光が赤くなるが、睡眠状態で解除できる。",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nargacuga_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Nargacuga.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -920,7 +920,7 @@
     "public": true
   },
   {
-    "id": "47",
+    "id": "B7mR3s2y",
     "name": "オオナズチ",
     "number": 47,
     "species": "古龍種",
@@ -957,7 +957,7 @@
     "note": "姿が見えない間はロックオン不可。集中攻撃の怯み、角破壊で姿をうまく隠せなくなる。舌を使った攻撃でSPゲージを奪ってくる。",
     "rarePart": "角",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Chameleos_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Chameleos.png",
     "weapons": [
       "双剣",
       "大剣",
@@ -980,7 +980,7 @@
     "public": true
   },
   {
-    "id": "46",
+    "id": "5hP9vT1k",
     "name": "オドガロン亜種",
     "number": 46,
     "species": "牙竜種",
@@ -1016,8 +1016,8 @@
     "statusAilment": "裂傷",
     "note": "頭部と前脚を破壊すると弱体化する",
     "rarePart": "前脚",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Ebony Odogaron_i.png",
-    "imageUrl": null,
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Ebony%20Odogaron_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/EbonyOdogaron.png",
     "weapons": [
       "双剣",
       "ランス",
@@ -1036,7 +1036,7 @@
     "public": true
   },
   {
-    "id": "45",
+    "id": "xZ4kM2rN",
     "name": "アオアシラ",
     "number": 45,
     "species": "牙獣種",
@@ -1076,8 +1076,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "前脚",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lagombi_i.png",
-    "imageUrl": null,
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Arzuros_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Arzuros.png",
     "weapons": [
       "双剣",
       "太刀",
@@ -1096,7 +1096,7 @@
     "public": true
   },
   {
-    "id": "44",
+    "id": "G8sD3n9w",
     "name": "ディノバルド",
     "number": 44,
     "species": "獣竜種",
@@ -1128,8 +1128,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Barroth_i.png",
-    "imageUrl": null,
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Glavenus_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Glavenus.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -1155,7 +1155,7 @@
     "public": true
   },
   {
-    "id": "43",
+    "id": "jP2vT7rL",
     "name": "チャタカブラ",
     "number": 43,
     "species": "両生種",
@@ -1184,7 +1184,7 @@
     "note": "",
     "rarePart": "前脚",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Chatacabra_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Chatacabra.png",
     "weapons": [
       "片手剣",
       "ハンマー",
@@ -1200,7 +1200,7 @@
     "public": true
   },
   {
-    "id": "42",
+    "id": "9vN1kX4m",
     "name": "バゼルギウス",
     "number": 42,
     "species": "飛竜種",
@@ -1229,7 +1229,7 @@
     "note": "爆鱗は、放たれる度に減っていく。攻撃によっても減らすことが可能で、部位破壊、気絶状態の他、飛行中でのダウンにて頭と尻尾の爆鱗をすべて無くすことができる。\\nまた、脚への一定ダメージによるダウンでもすべての爆鱗を無くすことができる。",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Bazelgeuse_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%82%BC%E3%83%AB%E3%82%AE%E3%82%A6%E3%82%B9x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Bazelgeuse.png",
     "weapons": [
       "双剣",
       "太刀",
@@ -1250,7 +1250,7 @@
     "public": true
   },
   {
-    "id": "41",
+    "id": "3hR6tP8s",
     "name": "キリン",
     "number": 41,
     "species": "古龍種",
@@ -1283,7 +1283,7 @@
     "note": "雷纏い状態後、龍属性攻撃のダメージで怯ませることができ、雷纏いも解除できる",
     "rarePart": "角",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kirin_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Kirin.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -1303,7 +1303,7 @@
     "public": true
   },
   {
-    "id": "40",
+    "id": "kL5wT9qY",
     "name": "ティガレックス",
     "number": 40,
     "species": "飛竜種",
@@ -1336,7 +1336,7 @@
     "note": "前脚と頭部の部位破壊で大きな隙が生まれる",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tigrex_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%86%E3%82%A3%E3%82%AC%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Tigrex.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -1363,7 +1363,7 @@
     "public": true
   },
   {
-    "id": "39",
+    "id": "B2mR7s1z",
     "name": "ウルクスス",
     "number": 39,
     "species": "牙獣種",
@@ -1403,8 +1403,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Arzuros_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A6%E3%83%AB%E3%82%AF%E3%82%B9sx.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lagombi_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Lagombi.png",
     "weapons": [
       "双剣",
       "大剣",
@@ -1422,7 +1422,7 @@
     "public": true
   },
   {
-    "id": "38",
+    "id": "X8yZ4k9p",
     "name": "ラングロトラ",
     "number": 38,
     "species": "牙獣種",
@@ -1450,8 +1450,8 @@
     "statusAilment": "麻痺、悪臭（一時SPゲージ回復不可、SPスキル使用不可）",
     "note": "",
     "rarePart": "背中",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Lagombi_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%A9%E3%83%B3%E3%82%B0%E3%83%AD%E3%83%88%E3%83%A9x.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Volvidon_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Volvidon.png",
     "weapons": [
       "ハンマー",
       "ランス",
@@ -1470,7 +1470,7 @@
     "public": true
   },
   {
-    "id": "37",
+    "id": "D3mS1n7w",
     "name": "イソネミクニ",
     "number": 37,
     "species": "海竜種",
@@ -1503,8 +1503,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Paolumu_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A4%E3%82%BD%E3%83%8D%E3%83%9F%E3%82%AF%E3%83%8Bx.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Somnacanth_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Somnacanth.png",
     "weapons": [
       "双剣",
       "大剣",
@@ -1523,7 +1523,7 @@
     "public": true
   },
   {
-    "id": "36",
+    "id": "gP9vT4rL",
     "name": "ネルギガンテ",
     "number": 36,
     "species": "古龍種",
@@ -1556,7 +1556,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nergigante_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%8D%E3%83%AD%E3%82%AE%E3%82%AC%E3%83%B3%E3%83%86.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Nergigante.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -1581,7 +1581,7 @@
     "public": true
   },
   {
-    "id": "35",
+    "id": "2hR5tP1j",
     "name": "リオレウス希少種",
     "number": 35,
     "species": "飛竜種",
@@ -1613,8 +1613,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Silver Rathalos_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A6%E3%82%B9%E5%B8%8C%E5%B0%91%E7%A8%AEa.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Silver%20Rathalos_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/SilverRathalos.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -1637,7 +1637,7 @@
     "public": true
   },
   {
-    "id": "34",
+    "id": "6vN9mX3s",
     "name": "リオレイア希少種",
     "number": 34,
     "species": "飛竜種",
@@ -1669,8 +1669,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Gold Rathian_1.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A4%E3%82%A2%E5%B8%8C%E5%B0%91%E7%A8%AEa.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Gold%20Rathian_1.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/GoldRathian.png",
     "weapons": [
       "片手剣太刀狩猟笛ガンランススラッシュアックスチャージアックスライトボウガンヘビィボウガン弓"
     ],
@@ -1683,7 +1683,7 @@
     "public": true
   },
   {
-    "id": "33",
+    "id": "xZ1kM7rN",
     "name": "アケノシルム",
     "number": 33,
     "species": "鳥竜種",
@@ -1712,7 +1712,7 @@
     "note": "",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Aknosom_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A2%E3%82%B1%E3%83%8E%E3%82%B7%E3%83%AB%E3%83%A0x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Aknosom.png",
     "weapons": [
       "双剣",
       "大剣",
@@ -1732,7 +1732,7 @@
     "public": true
   },
   {
-    "id": "32",
+    "id": "G4sD9n2w",
     "name": "ラージャン",
     "number": 32,
     "species": "牙獣種",
@@ -1763,7 +1763,7 @@
     "note": "2つの強化状態があるが、尻尾部位破壊か睡眠状態にすることで、解除可能。尻尾部位破壊は、強化状態中のみ可能。",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rajang_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%A9%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%B3x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Rajang.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -1791,7 +1791,7 @@
     "public": true
   },
   {
-    "id": "31",
+    "id": "jP7vT3rL",
     "name": "マガイマガド",
     "number": 31,
     "species": "牙竜種",
@@ -1823,7 +1823,7 @@
     "note": "鬼火をまとった部位には雷属性が極めて有効。部位破壊することで鬼火を解除できる。",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Magnamalo_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%9E%E3%82%AC%E3%82%A4%E3%83%9E%E3%82%AC%E3%83%89x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Magnamalo.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -1851,7 +1851,7 @@
     "public": true
   },
   {
-    "id": "30",
+    "id": "9vN4kX8m",
     "name": "テオ・テスカトル",
     "number": 30,
     "species": "古龍種",
@@ -1890,7 +1890,7 @@
     "note": "炎纏い状態では、遠距離攻撃が効きにくい。頭部破壊で炎と粉塵を取り払える。炎には水属性攻撃、粉塵には氷属性攻撃が有効。一定ダメージを与えると取り払える。",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Teostra_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%86%E3%82%AA%E3%83%BB%E3%83%86%E3%82%B9%E3%82%AB%E3%83%88%E3%83%AB.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Teostra.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -1912,7 +1912,7 @@
     "public": true
   },
   {
-    "id": "29",
+    "id": "3hR1tP7s",
     "name": "パオウルムー亜種",
     "number": 29,
     "species": "飛竜種",
@@ -1943,8 +1943,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nightshade Paolumu_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%82%AA%E3%82%A6%E3%83%AB%E3%83%A0%E3%83%BC%E4%BA%9C%E7%A8%AE.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Nightshade%20Paolumu_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/NightshadePaolumu.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -1965,7 +1965,7 @@
     "public": true
   },
   {
-    "id": "28",
+    "id": "kL2wT9qB",
     "name": "タマミツネ",
     "number": 28,
     "species": "海竜種",
@@ -2002,7 +2002,7 @@
     "note": "",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Mizutsune_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Mizutsune.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -2029,7 +2029,7 @@
     "public": true
   },
   {
-    "id": "27",
+    "id": "B5mR1s9y",
     "name": "プケプケ亜種",
     "number": 27,
     "species": "鳥竜種",
@@ -2063,8 +2063,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Coral Pukei-Pukei_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%96%E3%82%B1%E3%83%97%E3%82%B1%E4%BA%9C%E7%A8%AEx.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Coral%20Pukei-Pukei_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/CoralPukeiPukei.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -2086,7 +2086,7 @@
     "public": true
   },
   {
-    "id": "26",
+    "id": "X7yZ2k4m",
     "name": "ディアブロス亜種",
     "number": 26,
     "species": "飛竜種",
@@ -2122,8 +2122,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "角",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Black Diablos_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%87%E3%82%A3%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B9%E4%BA%9C%E7%A8%AEx.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Black%20Diablos_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/BlackDiablos.png",
     "weapons": [
       "双剣",
       "ハンマー",
@@ -2141,7 +2141,7 @@
     "public": true
   },
   {
-    "id": "25",
+    "id": "D9mS4n1w",
     "name": "リオレウス亜種",
     "number": 25,
     "species": "飛竜種",
@@ -2181,8 +2181,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Azure Rathalos_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A6%E3%82%B9%E4%BA%9C%E7%A8%AEx.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Azure%20Rathalos_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/AzureRathalos.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -2203,7 +2203,7 @@
     "public": true
   },
   {
-    "id": "24",
+    "id": "gP3vT8rL",
     "name": "リオレイア亜種",
     "number": 24,
     "species": "飛竜種",
@@ -2243,8 +2243,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾（切断のみ）",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Pink Rathian_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A4%E3%82%A2%E4%BA%9C%E7%A8%AEx.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Pink%20Rathian_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/PinkRathian.png",
     "weapons": [
       "片手剣",
       "太刀",
@@ -2261,7 +2261,7 @@
     "public": true
   },
   {
-    "id": "23",
+    "id": "2hR9tP4j",
     "name": "クシャルダオラ",
     "number": 23,
     "species": "古龍種",
@@ -2305,8 +2305,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kushala Daora_i.png",
-    "imageUrl": null,
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kushala%20Daora_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/KushalaDaora.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -2331,7 +2331,7 @@
     "public": true
   },
   {
-    "id": "22",
+    "id": "6vN1mX7s",
     "name": "フルフル",
     "number": 22,
     "species": "飛竜種",
@@ -2373,7 +2373,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Khezu_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%95%E3%83%AB%E3%83%95%E3%83%ABx.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Khezu.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -2395,7 +2395,7 @@
     "public": true
   },
   {
-    "id": "21",
+    "id": "xZ5kM9rN",
     "name": "バサルモス",
     "number": 21,
     "species": "飛竜種",
@@ -2448,7 +2448,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Basarios_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%82%B5%E3%83%AB%E3%83%A2%E3%82%B9x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Basarios.png",
     "weapons": [
       "太刀",
       "ハンマー",
@@ -2466,7 +2466,7 @@
     "public": true
   },
   {
-    "id": "20",
+    "id": "G2sD7n1w",
     "name": "イビルジョー",
     "number": 20,
     "species": "獣竜種",
@@ -2507,7 +2507,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Deviljho_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A4%E3%83%93%E3%83%AB%E3%82%B8%E3%83%A7%E3%83%BCx.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Deviljho.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -2534,7 +2534,7 @@
     "public": true
   },
   {
-    "id": "19",
+    "id": "jP4vT9rL",
     "name": "オドガロン",
     "number": 19,
     "species": "牙竜種",
@@ -2570,7 +2570,7 @@
     "note": "",
     "rarePart": "前脚",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Odogaron_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%AA%E3%83%89%E3%82%AC%E3%83%AD%E3%83%B3x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Odogaron.png",
     "weapons": [
       "双剣",
       "ランス",
@@ -2587,7 +2587,7 @@
     "public": true
   },
   {
-    "id": "18",
+    "id": "9vN7kX2m",
     "name": "ツィツィヤック",
     "number": 18,
     "species": "鳥竜種",
@@ -2620,7 +2620,7 @@
     "note": "",
     "rarePart": "頭（1回目、2回目）",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tzitzi-Ya-Ku_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%84%E3%82%A3%E3%83%84%E3%82%A3%E3%83%A4%E3%83%83%E3%82%AFx.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/TzitziYaKu.png",
     "weapons": [
       "双剣",
       "太刀",
@@ -2636,7 +2636,7 @@
     "public": true
   },
   {
-    "id": "17",
+    "id": "3hR4tP9s",
     "name": "ジンオウガ",
     "number": 17,
     "species": "牙竜種",
@@ -2669,7 +2669,7 @@
     "note": "",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Zinogre_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Zinogre.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -2696,7 +2696,7 @@
     "public": true
   },
   {
-    "id": "16",
+    "id": "kL1wT7qf",
     "name": "ベリオロス",
     "number": 16,
     "species": "飛竜種",
@@ -2728,8 +2728,8 @@
     "statusAilment": "",
     "note": "翼の棘を破壊すると動きに隙が生まれる。棘は、打撃系の武器が効果的。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Beotodus_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%99%E3%83%AA%E3%82%AA%E3%83%AD%E3%82%B9x.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Barioth_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Barioth.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -2754,7 +2754,7 @@
     "public": true
   },
   {
-    "id": "15",
+    "id": "B9mR2s4y",
     "name": "バフバロ",
     "number": 15,
     "species": "獣竜種",
@@ -2794,7 +2794,7 @@
     "note": "",
     "rarePart": "角",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Banbaro_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%83%95%E3%83%90%E3%83%ADx.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Banbaro.png",
     "weapons": [
       "双剣",
       "大剣",
@@ -2815,7 +2815,7 @@
     "public": true
   },
   {
-    "id": "14",
+    "id": "X1yZ7k3m",
     "name": "ラドバルキン",
     "number": 14,
     "species": "獣竜種",
@@ -2855,7 +2855,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Radobaan_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%A9%E3%83%89%E3%83%90%E3%83%AB%E3%82%AD%E3%83%B3x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Radobaan.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -2872,7 +2872,7 @@
     "public": true
   },
   {
-    "id": "13",
+    "id": "D4mS9n2w",
     "name": "ディアブロス",
     "number": 13,
     "species": "飛竜種",
@@ -2912,7 +2912,7 @@
     "note": "",
     "rarePart": "角",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Diablos_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%87%E3%82%A3%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B9x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Diablos.png",
     "weapons": [
       "双剣",
       "ハンマー",
@@ -2931,7 +2931,7 @@
     "public": true
   },
   {
-    "id": "12",
+    "id": "gP7vT1rL",
     "name": "リオレウス",
     "number": 12,
     "species": "飛竜種",
@@ -2973,7 +2973,7 @@
     "note": "",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rathalos_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A6%E3%82%B9x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Rathalos.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -2996,7 +2996,7 @@
     "public": true
   },
   {
-    "id": "11",
+    "id": "2hR3tP8j",
     "name": "レイギエナ",
     "number": 11,
     "species": "飛竜種",
@@ -3033,7 +3033,7 @@
     "note": "",
     "rarePart": "翼",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Legiana.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AC%E3%82%A4%E3%82%AE%E3%82%A8%E3%83%8Ax.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Legiana.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -3058,7 +3058,7 @@
     "public": true
   },
   {
-    "id": "10",
+    "id": "6vN4mX9s",
     "name": "リオレイア",
     "number": 10,
     "species": "飛竜種",
@@ -3099,7 +3099,7 @@
     "note": "",
     "rarePart": "尻尾（切断のみ）",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Rathian_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%AA%E3%82%AA%E3%83%AC%E3%82%A4%E3%82%A2x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Rathian.png",
     "weapons": [
       "片手剣",
       "太刀",
@@ -3120,7 +3120,7 @@
     "public": true
   },
   {
-    "id": "9",
+    "id": "xZ9kM1rN",
     "name": "アンジャナフ",
     "number": 9,
     "species": "獣竜種",
@@ -3152,7 +3152,7 @@
     "note": "",
     "rarePart": "尻尾",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Anjanath_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%82%A2%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%8A%E3%83%95x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Anjanath.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -3176,7 +3176,7 @@
     "public": true
   },
   {
-    "id": "8",
+    "id": "G7sD2n4w",
     "name": "パオウルムー",
     "number": 8,
     "species": "飛竜種",
@@ -3211,8 +3211,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Somnacanth_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%90%E3%82%AA%E3%82%A6%E3%83%AB%E3%83%A0%E3%83%BCx.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Paolumu_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Paolumu.png",
     "weapons": [
       "片手剣",
       "狩猟笛",
@@ -3228,7 +3228,7 @@
     "public": true
   },
   {
-    "id": "7",
+    "id": "jP1vT8rL",
     "name": "ジュラトドス",
     "number": 7,
     "species": "魚竜種",
@@ -3261,7 +3261,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Jyuratodus_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Jyuratodus.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -3286,7 +3286,7 @@
     "public": true
   },
   {
-    "id": "6",
+    "id": "9vN2kX7m",
     "name": "トビカガチ",
     "number": 6,
     "species": "牙竜種",
@@ -3321,8 +3321,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Astalos_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%88%E3%83%93%E3%82%AB%E3%82%AC%E3%83%81x.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Tobi-Kadachi_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/TobiKadachi.png",
     "weapons": [
       "片手剣",
       "双剣",
@@ -3348,7 +3348,7 @@
     "public": true
   },
   {
-    "id": "5",
+    "id": "3hR9tP2s",
     "name": "ドスギルオス",
     "number": 5,
     "species": "牙竜種",
@@ -3384,8 +3384,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "頭",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Girros_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%89%E3%82%B9%E3%82%AE%E3%83%AB%E3%82%AA%E3%82%B9x.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great%20Girros_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/GreatGirros.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -3402,7 +3402,7 @@
     "public": true
   },
   {
-    "id": "4",
+    "id": "kL4wT1qg",
     "name": "ボルボロス",
     "number": 4,
     "species": "獣竜種",
@@ -3441,8 +3441,8 @@
     "statusAilment": "",
     "note": "弱点は前脚か後ろ脚を狙い転倒させよう。泥を纏った箇所は硬いため、泥を剥がせる水属性の武器が有効となる。",
     "rarePart": "尻尾",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Volvidon_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%9C%E3%83%AB%E3%83%9C%E3%83%AD%E3%82%B9x.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Barroth_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/Barroth.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -3462,7 +3462,7 @@
     "public": true
   },
   {
-    "id": "3",
+    "id": "B2mR9s7y",
     "name": "プケプケ",
     "number": 3,
     "species": "鳥竜種",
@@ -3497,7 +3497,7 @@
     "note": "",
     "rarePart": "尻尾（切断のみ）",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Pukei-Pukei_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%96%E3%82%B1%E3%83%97%E3%82%B1x.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/PukeiPukei.png",
     "weapons": [
       "片手剣",
       "大剣",
@@ -3519,7 +3519,7 @@
     "public": true
   },
   {
-    "id": "2",
+    "id": "X5yZ1k4m",
     "name": "クルルヤック",
     "number": 2,
     "species": "鳥竜種",
@@ -3551,7 +3551,7 @@
     "note": "",
     "rarePart": "頭",
     "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Kulu-Ya-Ku_i.png",
-    "imageUrl": null,
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/KuluYaKu.png",
     "weapons": [
       "双剣",
       "太刀",
@@ -3571,7 +3571,7 @@
     "public": true
   },
   {
-    "id": "1",
+    "id": "D7mS2n9w",
     "name": "ドスジャグラス",
     "number": 1,
     "species": "牙竜種",
@@ -3614,8 +3614,8 @@
     "statusAilment": "",
     "note": "",
     "rarePart": "前脚",
-    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great Jagras_i.png",
-    "imageUrl": "https://monchan3.xsrv.jp/images/monsters/%E3%83%89%E3%82%B9%E3%82%B8%E3%83%A3%E3%82%B0%E3%83%A9%E3%82%B9x.png",
+    "iconUrl": "https://pub-62d400fd96b4407a9a040615c529457a.r2.dev/Great%20Jagras_i.png",
+    "imageUrl": "https://pub-01b01edbea164ba6a4151fab7b1b0edc.r2.dev/monsters-detail/GreatJagras.png",
     "weapons": [
       "片手剣",
       "大剣",
