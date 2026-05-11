@@ -19,7 +19,7 @@ git add .
 git commit -m "Initial commit: Astro SSG project"
 
 # リモートリポジトリを追加
-git remote add origin https://github.com/YOUR_USERNAME/monchan-astro.git
+git remote add origin https://github.com/YOUR_USERNAME/hunterguide_astro.git
 git branch -M main
 git push -u origin main
 ```
@@ -31,7 +31,7 @@ git push -u origin main
 3. 「プロジェクトを作成」をクリック
 4. 「GitHubに接続」を選択
 5. GitHubアカウントを認可
-6. リポジトリ「monchan-astro」を選択
+6. リポジトリ「hunterguide_astro」を選択
 
 ### 3. ビルド設定を確認
 

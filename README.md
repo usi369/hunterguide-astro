@@ -61,7 +61,7 @@ npm run preview
 ## プロジェクト構造
 
 ```
-monchan-astro/
+hunterguide_astro/
 ├── src/
 │   ├── components/
 │   │   ├── MonsterCard.jsx      # モンスターカードコンポーネント
