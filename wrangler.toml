@@ -1,12 +1,9 @@
 name = "hunterguide-astro"
-type = "javascript"
-account_id = "9d1f40fe9d4955f5baac25b829678cee"
+compatibility_date = "2026-05-12"
 workers_dev = true
 
-[env.production]
-routes = [
-  { pattern = "monchan-encyclopedia.pages.dev/*", zone_name = "monchan-encyclopedia.pages.dev" }
-]
+[assets]
+directory = "./dist"
 
 [[kv_namespaces]]
 binding = "SESSION"
