@@ -1,0 +1,14 @@
+name = "hunterguide-astro"
+type = "javascript"
+account_id = "9d1f40fe9d4955f5baac25b829678cee"
+workers_dev = true
+
+[env.production]
+routes = [
+  { pattern = "monchan-encyclopedia.pages.dev/*", zone_name = "monchan-encyclopedia.pages.dev" }
+]
+
+[[kv_namespaces]]
+binding = "SESSION"
+id = "090124c88aa44179a171bb547aea0286"
+preview_id = "090124c88aa44179a171bb547aea0286"
