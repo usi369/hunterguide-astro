@@ -1,10 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import MonsterCard from '../components/MonsterCard';
-import AdDisplayUnit from '../components/AdDisplayUnit.astro';
+import AdSmartBanner from '../components/AdSmartBanner.astro';
 import { getMonsters } from '../lib/api';
 
 const monsters = await getMonsters();
+const sortedMonsters = [...monsters].sort((a, b) => Number(b.number ?? b.id) - Number(a.number ?? a.id));
+const filters = ['ALL', '次元臨界', '次元変異', '希少種', '亜種', '古龍種'];
+const getSortValue = (monster: any) => Number(monster.number ?? 0);
+const getGrades = (monster: any) => {
+  if (Array.isArray(monster.grades) && monster.grades.length > 0) {
+    return monster.grades;
+  }
+
+  if (typeof monster.grade === 'string') {
+    return monster.grade.split(',').map((grade: string) => grade.trim()).filter(Boolean);
+  }
+
+  return [];
+};
 ---
 
 <Layout 
@@ -12,45 +26,244 @@ const monsters = await getMonsters();
   description="モンスターハンターNowの全モンスター一覧。強さ、弱点、出現地などの詳子情報を確認できます。"
   url="https://monchan-encyclopedia.pages.dev/monsters"
 >
-  <div class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 pb-24">
+  <div class="min-h-screen bg-slate-50 pb-24">
     {/* Header */}
-    <div class="sticky top-0 bg-slate-800 border-b border-slate-700 z-20">
-      <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="/" class="text-white hover:text-blue-400 transition">
-          ← ホーム
+    <div class="sticky top-0 bg-white/95 border-b border-slate-200 shadow-sm backdrop-blur z-20">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+        <a href="/" class="rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-black text-slate-600 shadow-sm transition hover:-translate-y-0.5 hover:text-blue-900 hover:shadow-md sm:px-4">
+          ← 戻る
         </a>
-        <h1 class="text-2xl font-bold text-white">モンスター一覧</h1>
-        <div class="w-12"></div>
+        <div class="min-w-0 text-center">
+          <h1 class="truncate text-2xl font-bold text-blue-900 tracking-normal sm:text-3xl">
+            モンスター一覧
+          </h1>
+          <p class="hidden text-xs font-bold text-gray-500 sm:block">
+            Monster Index
+          </p>
+        </div>
+        <div class="flex items-center gap-3 text-xs font-bold text-slate-700">
+          <button
+            id="sort-toggle"
+            type="button"
+            class="group relative flex flex-col items-center rounded-xl px-2 py-1 leading-tight transition hover:bg-slate-100 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
+            data-sort-direction="desc"
+            aria-label="表示順を切り替え"
+            aria-pressed="false"
+          >
+            <span id="sort-icon" class="text-2xl text-red-500">↕</span>
+            表示順
+            <span class="pointer-events-none absolute right-0 top-full mt-2 w-max max-w-40 rounded-xl bg-slate-950 px-3 py-2 text-center text-[11px] font-black leading-tight text-white opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
+              昇順・降順を切り替え
+            </span>
+          </button>
+          <button
+            id="search-toggle"
+            type="button"
+            class="group relative flex flex-col items-center rounded-xl px-2 py-1 leading-tight transition hover:bg-slate-100 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
+            aria-controls="monster-search-panel"
+            aria-expanded="false"
+          >
+            <span class="text-2xl">⌕</span>
+            検索
+            <span class="pointer-events-none absolute right-0 top-full mt-2 w-max max-w-40 rounded-xl bg-slate-950 px-3 py-2 text-center text-[11px] font-black leading-tight text-white opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
+              文字検索で絞り込み
+            </span>
+          </button>
+        </div>
       </div>
     </div>
 
     {/* Content */}
-    <div class="max-w-4xl mx-auto px-4 py-8">
-      {monsters.length > 0 ? (
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      {sortedMonsters.length > 0 ? (
         <div>
-          <p class="text-slate-300 mb-6">
-            全 {monsters.length} 体のモンスター
-          </p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {monsters.map((monster) => (
-              <MonsterCard client:load monster={monster} />
+          <div class="mb-6 w-fit max-w-full overflow-x-auto rounded-[26px] border border-white bg-white/80 p-2 shadow-[0_16px_40px_rgba(15,23,42,0.08)] ring-1 ring-slate-200/70 backdrop-blur">
+            <div class="flex w-max items-center gap-2 rounded-[22px] bg-slate-100/80 p-1.5">
+              {filters.map((filter) => (
+                <button
+                  type="button"
+                  class={`grade-filter group relative whitespace-nowrap rounded-full px-4 py-2.5 text-xs font-black transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100 sm:px-5 sm:text-sm ${
+                    filter === 'ALL'
+                      ? 'bg-slate-950 text-white shadow-[0_10px_24px_rgba(15,23,42,0.22)]'
+                      : 'bg-white/75 text-slate-600 shadow-sm ring-1 ring-slate-200/80 hover:bg-white hover:text-slate-950 hover:shadow-md'
+                  }`}
+                  data-filter={filter}
+                  aria-pressed={filter === 'ALL' ? 'true' : 'false'}
+                >
+                  <span class={`mr-1.5 inline-block h-2 w-2 rounded-full align-middle transition ${
+                    filter === 'ALL' ? 'bg-red-500' : 'bg-slate-300 group-hover:bg-red-400'
+                  }`}></span>
+                  {filter}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div class="mb-5 flex items-center justify-between gap-3">
+            <p class="text-sm font-black text-slate-500">
+              <span id="monster-filter-label">全</span> <span id="monster-filter-count">{sortedMonsters.length}</span> 体
+            </p>
+            <div class="h-px flex-1 bg-gradient-to-r from-slate-200 to-transparent"></div>
+          </div>
+
+          <div id="monster-search-panel" class="mb-6 hidden rounded-3xl border border-white bg-white/90 p-3 shadow-[0_16px_40px_rgba(15,23,42,0.08)] ring-1 ring-slate-200/70">
+            <label for="monster-search-input" class="sr-only">モンスター名で検索</label>
+            <div class="flex items-center gap-3 rounded-2xl bg-slate-100 px-4 py-3">
+              <span class="text-xl text-slate-500">⌕</span>
+              <input
+                id="monster-search-input"
+                type="search"
+                autocomplete="off"
+                placeholder="モンスター名を入力"
+                class="w-full bg-transparent text-base font-bold text-slate-950 placeholder:text-slate-400 focus:outline-none"
+              />
+              <button
+                id="monster-search-clear"
+                type="button"
+                class="hidden flex-shrink-0 whitespace-nowrap rounded-full bg-white px-3 py-1.5 text-xs font-black text-slate-500 shadow-sm ring-1 ring-slate-200 transition hover:text-red-600"
+              >
+                クリア
+              </button>
+            </div>
+          </div>
+
+          <div id="monster-grid" class="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-x-2 gap-y-8 sm:gap-x-3">
+            {sortedMonsters.map((monster) => (
+              <div
+                class="monster-card"
+                data-grades={getGrades(monster).join('|')}
+                data-name={monster.name}
+                data-order={getSortValue(monster)}
+              >
+                <MonsterCard key={monster.id} monster={monster} />
+              </div>
             ))}
+          </div>
+
+          <div id="monster-filter-empty" class="hidden rounded-2xl bg-white px-4 py-12 text-center shadow-sm">
+            <p class="text-base font-bold text-slate-500">
+              選択した条件のモンスターはまだ登録されていません
+            </p>
           </div>
         </div>
       ) : (
         <div class="text-center py-12">
-          <p class="text-slate-400 text-lg">
+          <p class="text-slate-500 text-lg font-bold">
             モンスターデータが見つかりません
           </p>
         </div>
       )}
     </div>
 
-    {/* Fixed Bottom Ad Banner */}
-    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-50 flex justify-center">
-      <div class="w-full">
-        <AdDisplayUnit slot="4039552557" format="auto" responsive={true} />
-      </div>
-    </div>
+    <AdSmartBanner adSlot="4039552557" format="horizontal" responsive={true} />
   </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.grade-filter');
+    const grid = document.querySelector('#monster-grid');
+    const cards = Array.from(document.querySelectorAll('.monster-card'));
+    const count = document.querySelector('#monster-filter-count');
+    const label = document.querySelector('#monster-filter-label');
+    const empty = document.querySelector('#monster-filter-empty');
+    const sortToggle = document.querySelector('#sort-toggle');
+    const sortIcon = document.querySelector('#sort-icon');
+    const searchToggle = document.querySelector('#search-toggle');
+    const searchPanel = document.querySelector('#monster-search-panel');
+    const searchInput = document.querySelector('#monster-search-input');
+    const searchClear = document.querySelector('#monster-search-clear');
+
+    let selectedFilter = 'ALL';
+    let sortDirection = 'desc';
+    let searchText = '';
+
+    const normalizeText = (value) => String(value || '').trim().toLocaleLowerCase('ja-JP');
+
+    const renderCards = () => {
+      let visibleCount = 0;
+      const orderedCards = [...cards].sort((a, b) => {
+        const left = Number(a.getAttribute('data-order') || 0);
+        const right = Number(b.getAttribute('data-order') || 0);
+        return sortDirection === 'asc' ? left - right : right - left;
+      });
+
+      orderedCards.forEach((card) => grid?.appendChild(card));
+
+      cards.forEach((card) => {
+        const grades = (card.getAttribute('data-grades') || '').split('|').filter(Boolean);
+        const name = normalizeText(card.getAttribute('data-name'));
+        const matchesGrade = selectedFilter === 'ALL' || grades.includes(selectedFilter);
+        const matchesSearch = !searchText || name.includes(searchText);
+        const visible = matchesGrade && matchesSearch;
+
+        card.classList.toggle('hidden', !visible);
+        if (visible) visibleCount += 1;
+      });
+
+      if (label) {
+        const filterLabel = selectedFilter === 'ALL' ? '全' : selectedFilter;
+        label.textContent = searchText ? `${filterLabel} / 検索中` : filterLabel;
+      }
+      if (count) count.textContent = String(visibleCount);
+      if (empty) empty.classList.toggle('hidden', visibleCount > 0);
+      if (searchClear) searchClear.classList.toggle('hidden', !searchText);
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        selectedFilter = button.getAttribute('data-filter') || 'ALL';
+
+        buttons.forEach((item) => {
+          const active = item === button;
+          item.setAttribute('aria-pressed', String(active));
+          item.classList.toggle('bg-slate-950', active);
+          item.classList.toggle('text-white', active);
+          item.classList.toggle('shadow-[0_10px_24px_rgba(15,23,42,0.22)]', active);
+          item.classList.toggle('bg-white/75', !active);
+          item.classList.toggle('text-slate-600', !active);
+          item.classList.toggle('shadow-sm', !active);
+          item.classList.toggle('ring-1', !active);
+          item.classList.toggle('ring-slate-200/80', !active);
+          item.classList.toggle('hover:bg-white', !active);
+          item.classList.toggle('hover:text-slate-950', !active);
+          item.classList.toggle('hover:shadow-md', !active);
+
+          const dot = item.querySelector('span');
+          if (dot) {
+            dot.classList.toggle('bg-red-500', active);
+            dot.classList.toggle('bg-slate-300', !active);
+          }
+        });
+
+        renderCards();
+      });
+    });
+
+    sortToggle?.addEventListener('click', () => {
+      sortDirection = sortDirection === 'desc' ? 'asc' : 'desc';
+      sortToggle.setAttribute('data-sort-direction', sortDirection);
+      sortToggle.setAttribute('aria-pressed', String(sortDirection === 'asc'));
+      if (sortIcon) sortIcon.textContent = sortDirection === 'desc' ? '↓' : '↑';
+      renderCards();
+    });
+
+    searchToggle?.addEventListener('click', () => {
+      const open = searchPanel?.classList.toggle('hidden') === false;
+      searchToggle.setAttribute('aria-expanded', String(open));
+      if (open) searchInput?.focus();
+    });
+
+    searchInput?.addEventListener('input', () => {
+      searchText = normalizeText(searchInput.value);
+      renderCards();
+    });
+
+    searchClear?.addEventListener('click', () => {
+      searchText = '';
+      if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+      }
+      renderCards();
+    });
+  </script>
 </Layout>
