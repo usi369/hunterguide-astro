@@ -137,67 +137,86 @@ function FriendPostCard({ post, index }) {
         <p className="text-xs font-black text-slate-500">{postedDate}</p>
       </div>
 
-      <div className="p-4">
-        {post.imageUrl ? (
-          <img
-            src={post.imageUrl}
-            alt={`${post.hunterName || 'ハンター'}さんの自己紹介カード`}
-            loading="lazy"
-            className="aspect-[1.72/1] w-full rounded-2xl border border-sky-100 object-cover shadow-sm"
-          />
-        ) : (
-          <div className="flex aspect-[1.72/1] w-full items-center justify-center rounded-2xl border border-dashed border-sky-200 bg-sky-50 text-sm font-black text-sky-500">
-            画像なし
-          </div>
-        )}
-
-        <div className="mt-4 grid grid-cols-2 gap-3">
-          <CodePanel label="フレンドコード" value={post.friendCode} />
-          <CodePanel label="招待コード" value={post.inviteCode} />
-        </div>
-
-        <div className="mt-4 flex items-start justify-between gap-4">
+      <div className="p-4 lg:p-5">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
           <div className="min-w-0">
-            <h2 className="truncate text-lg font-black tracking-normal text-blue-950">
-              {post.hunterName || '名無しハンター'}
-            </h2>
-            <p className="mt-1 text-sm font-bold text-blue-700">
-              {playTimes.map((time) => labelFromMap(time, playTimeLabels)).filter(Boolean).join(' / ') || 'プレイ時間未設定'}
-            </p>
+            {post.imageUrl ? (
+              <img
+                src={post.imageUrl}
+                alt={`${post.hunterName || 'ハンター'}さんの自己紹介カード`}
+                loading="lazy"
+                className="aspect-[1.72/1] w-full rounded-2xl border border-sky-100 object-cover shadow-sm"
+              />
+            ) : (
+              <div className="flex aspect-[1.72/1] w-full items-center justify-center rounded-2xl border border-dashed border-sky-200 bg-sky-50 text-sm font-black text-sky-500">
+                画像なし
+              </div>
+            )}
+
+            <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+              <CodePanel label="フレンドコード" value={post.friendCode} />
+              <CodePanel label="招待コード" value={post.inviteCode} />
+            </div>
+
+            <div className="mt-4 flex items-start justify-between gap-4">
+              <div className="min-w-0">
+                <h2 className="truncate text-lg font-black tracking-normal text-blue-950 lg:text-2xl">
+                  {post.hunterName || '名無しハンター'}
+                </h2>
+                <p className="mt-1 text-sm font-bold text-blue-700">
+                  {playTimes.map((time) => labelFromMap(time, playTimeLabels)).filter(Boolean).join(' / ') || 'プレイ時間未設定'}
+                </p>
+              </div>
+              <p className="shrink-0 text-right text-sm font-black text-slate-600">
+                {location || 'エリア未設定'}
+              </p>
+            </div>
+
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {weapons.length > 0 ? (
+                weapons.map((weapon) => (
+                  <span
+                    key={weapon}
+                    className="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-xs font-black text-slate-700"
+                  >
+                    {labelFromMap(weapon, weaponLabels)}
+                  </span>
+                ))
+              ) : (
+                <span className="rounded-full border border-slate-100 bg-slate-50 px-3 py-1 text-xs font-black text-slate-400">
+                  武器未設定
+                </span>
+              )}
+            </div>
+
+            {post.comment && (
+              <p className="mt-4 break-words rounded-2xl bg-slate-50 px-4 py-3 text-sm leading-relaxed text-slate-700">
+                {post.comment}
+              </p>
+            )}
           </div>
-          <p className="shrink-0 text-right text-sm font-black text-slate-600">
-            {location || 'エリア未設定'}
-          </p>
-        </div>
 
-        <div className="mt-3 flex flex-wrap gap-1.5">
-          {weapons.length > 0 ? (
-            weapons.map((weapon) => (
-              <span
-                key={weapon}
-                className="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-xs font-black text-slate-700"
-              >
-                {labelFromMap(weapon, weaponLabels)}
-              </span>
-            ))
-          ) : (
-            <span className="rounded-full border border-slate-100 bg-slate-50 px-3 py-1 text-xs font-black text-slate-400">
-              武器未設定
-            </span>
-          )}
+          <aside className="hidden rounded-2xl border border-sky-100 bg-sky-50/70 p-4 shadow-sm lg:block">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-500">
+              Hunter Codes
+            </p>
+            <div className="mt-3 grid gap-3">
+              <CodePanel label="フレンドコード" value={post.friendCode} />
+              <CodePanel label="招待コード" value={post.inviteCode} />
+            </div>
+            {expiresAt && (
+              <p className="mt-4 text-right text-[11px] font-bold text-slate-400">
+                表示期限 {expiresAt}
+              </p>
+            )}
+          </aside>
         </div>
-
-        {post.comment && (
-          <p className="mt-4 break-words rounded-2xl bg-slate-50 px-4 py-3 text-sm leading-relaxed text-slate-700">
-            {post.comment}
-          </p>
-        )}
 
         {expiresAt && (
-          <p className="mt-3 text-right text-[11px] font-bold text-slate-400">
+          <p className="mt-3 text-right text-[11px] font-bold text-slate-400 lg:hidden">
             表示期限 {expiresAt}
           </p>
-        )}
+          )}
       </div>
     </article>
   );
@@ -272,7 +291,7 @@ export default function FriendPostTimeline() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-300 via-sky-200 to-sky-50 px-4 pb-12 pt-5">
-      <div className="mx-auto max-w-md">
+      <div className="mx-auto max-w-md lg:max-w-5xl">
         <header className="mb-5">
           <div className="flex items-center justify-center">
             <div className="text-center">
