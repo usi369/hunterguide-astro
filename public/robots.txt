@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: 
 
-Sitemap: https://monchan-encyclopedia.pages.dev/sitemap.xml
+Sitemap: https://monchandb.com/sitemap.xml

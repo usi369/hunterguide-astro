@@ -5,5 +5,5 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [react(), tailwind()],
   output: 'static',
-  site: 'https://example.com', // Will be updated with actual domain
+  site: 'https://monchandb.com',
 });
