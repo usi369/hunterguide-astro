@@ -33,10 +33,9 @@ function formatExpiry(value) {
   }).format(date);
 }
 
-function compactCode(value) {
+function formatCode(value) {
   if (!value) return '-';
-  if (value.length <= 10) return value;
-  return `${value.slice(0, 4)} ${value.slice(4, 8)}...`;
+  return String(value);
 }
 
 function CopyButton({ value, label }) {
@@ -71,8 +70,8 @@ function CodePanel({ label, value }) {
     <div className="min-w-0 rounded-xl border border-blue-100 bg-blue-50/80 p-3 lg:p-2.5">
       <p className="text-xs font-black text-blue-700 lg:text-[11px]">{label}</p>
       <div className="mt-2 flex items-center justify-between gap-3 lg:gap-2">
-        <p className="min-w-0 truncate font-mono text-lg font-black tracking-wide text-blue-950 lg:text-base">
-          {compactCode(value)}
+        <p className="min-w-0 whitespace-nowrap font-mono text-base font-black tracking-normal text-blue-950 sm:text-lg lg:text-sm">
+          {formatCode(value)}
         </p>
         <CopyButton value={value} label={label} />
       </div>
