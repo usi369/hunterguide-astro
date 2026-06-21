@@ -20,17 +20,16 @@ function formatPostDate(value) {
   return `${date.getMonth() + 1}/${date.getDate()} (${weekday})`;
 }
 
-function formatExpiry(value) {
+function formatDaysLeft(value) {
   if (!value) return '';
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return '';
 
-  return new Intl.DateTimeFormat('ja-JP', {
-    month: 'numeric',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-  }).format(date);
+  const diffMs = date.getTime() - Date.now();
+  if (diffMs <= 0) return '期限切れ';
+
+  const daysLeft = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+  return `あと${daysLeft}日`;
 }
 
 function formatCode(value) {
@@ -61,11 +60,11 @@ function CopyButton({ value, label }) {
     <button
       type="button"
       onClick={handleCopy}
-      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-blue-200 bg-white text-sm font-black text-blue-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md lg:h-8 lg:w-8 lg:text-xs"
+      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-blue-200 bg-white text-lg font-black text-blue-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md lg:h-8 lg:w-8 lg:text-base"
       aria-label={`${label}をコピー`}
       title={`${label}をコピー`}
     >
-      {copied ? 'OK' : 'Copy'}
+      {copied ? '✓' : '⧉'}
     </button>
   );
 }
@@ -86,7 +85,7 @@ function CodePanel({ label, value }) {
 
 function FriendPostCard({ post, index }) {
   const postedDate = formatPostDate(post.createdAt);
-  const expiresAt = formatExpiry(post.expiresAt);
+  const daysLeft = formatDaysLeft(post.expiresAt);
 
   return (
     <article className="overflow-hidden rounded-2xl bg-white shadow-lg shadow-sky-900/10 ring-1 ring-sky-100">
@@ -127,17 +126,17 @@ function FriendPostCard({ post, index }) {
               <CodePanel label="フレンドコード" value={post.friendCode} />
               <CodePanel label="招待コード" value={post.inviteCode} />
             </div>
-            {expiresAt && (
+            {daysLeft && (
               <p className="mt-2 text-right text-[10px] font-bold text-slate-400">
-                表示期限 {expiresAt}
+                表示期限 {daysLeft}
               </p>
             )}
           </aside>
         </div>
 
-        {expiresAt && (
+        {daysLeft && (
           <p className="mt-3 text-right text-[11px] font-bold text-slate-400 lg:hidden">
-            表示期限 {expiresAt}
+            表示期限 {daysLeft}
           </p>
           )}
       </div>
