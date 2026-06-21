@@ -35,7 +35,12 @@ function formatExpiry(value) {
 
 function formatCode(value) {
   if (!value) return '-';
-  return String(value);
+  const text = String(value).trim();
+  const digits = text.replace(/\s/g, '');
+  if (/^\d{12}$/.test(digits)) {
+    return digits.replace(/(\d{4})(?=\d)/g, '$1 ');
+  }
+  return text;
 }
 
 function CopyButton({ value, label }) {
