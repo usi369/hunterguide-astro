@@ -3,44 +3,6 @@ import { useEffect, useMemo, useState } from 'react';
 const API_BASE_URL = 'https://monchan-friend-api.usi369.workers.dev';
 const POSTS_PAGE_SIZE = 10;
 
-const weaponLabels = {
-  sword_and_shield: '片手剣',
-  swordShield: '片手剣',
-  sword: '片手剣',
-  dual_blades: '双剣',
-  dualBlades: '双剣',
-  great_sword: '大剣',
-  greatSword: '大剣',
-  katana: '太刀',
-  long_sword: '太刀',
-  longSword: '太刀',
-  hammer: 'ハンマー',
-  hunting_horn: '狩猟笛',
-  huntingHorn: '狩猟笛',
-  lance: 'ランス',
-  gunlance: 'ガンランス',
-  switch_axe: 'スラアク',
-  switchAxe: 'スラアク',
-  charge_blade: 'チャアク',
-  chargeBlade: 'チャアク',
-  insect_glaive: '操虫棍',
-  insectGlaive: '操虫棍',
-  light_bowgun: 'ライト',
-  lightBowgun: 'ライト',
-  heavy_bowgun: 'ヘビィ',
-  heavyBowgun: 'ヘビィ',
-  bow: '弓',
-};
-
-const playTimeLabels = {
-  morning: '朝',
-  daytime: '昼',
-  day: '昼',
-  evening: '夕',
-  night: '夜',
-  midnight: '深夜',
-};
-
 function normalizePosts(payload) {
   if (Array.isArray(payload)) return { posts: payload, nextCursor: null };
   return {
@@ -77,11 +39,6 @@ function compactCode(value) {
   return `${value.slice(0, 4)} ${value.slice(4, 8)}...`;
 }
 
-function labelFromMap(value, labels) {
-  if (!value) return '';
-  return labels[value] || String(value);
-}
-
 function CopyButton({ value, label }) {
   const [copied, setCopied] = useState(false);
 
@@ -100,7 +57,7 @@ function CopyButton({ value, label }) {
     <button
       type="button"
       onClick={handleCopy}
-      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-blue-200 bg-white text-sm font-black text-blue-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-blue-200 bg-white text-sm font-black text-blue-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md lg:h-8 lg:w-8 lg:text-xs"
       aria-label={`${label}をコピー`}
       title={`${label}をコピー`}
     >
@@ -111,10 +68,10 @@ function CopyButton({ value, label }) {
 
 function CodePanel({ label, value }) {
   return (
-    <div className="min-w-0 rounded-xl border border-blue-100 bg-blue-50/80 p-3">
-      <p className="text-xs font-black text-blue-700">{label}</p>
-      <div className="mt-2 flex items-center justify-between gap-3">
-        <p className="min-w-0 truncate font-mono text-lg font-black tracking-wide text-blue-950">
+    <div className="min-w-0 rounded-xl border border-blue-100 bg-blue-50/80 p-3 lg:p-2.5">
+      <p className="text-xs font-black text-blue-700 lg:text-[11px]">{label}</p>
+      <div className="mt-2 flex items-center justify-between gap-3 lg:gap-2">
+        <p className="min-w-0 truncate font-mono text-lg font-black tracking-wide text-blue-950 lg:text-base">
           {compactCode(value)}
         </p>
         <CopyButton value={value} label={label} />
@@ -124,31 +81,28 @@ function CodePanel({ label, value }) {
 }
 
 function FriendPostCard({ post, index }) {
-  const weapons = Array.isArray(post.weapons) ? post.weapons : [];
-  const playTimes = Array.isArray(post.playTimes) ? post.playTimes : [];
-  const location = [post.country, post.area].filter(Boolean).join(' / ');
   const postedDate = formatPostDate(post.createdAt);
   const expiresAt = formatExpiry(post.expiresAt);
 
   return (
     <article className="overflow-hidden rounded-2xl bg-white shadow-lg shadow-sky-900/10 ring-1 ring-sky-100">
-      <div className="flex items-center justify-between bg-sky-50 px-4 py-3">
+      <div className="flex items-center justify-between bg-sky-50 px-4 py-3 lg:py-2">
         <p className="text-sm font-black text-blue-800">投稿 #{index + 1}</p>
         <p className="text-xs font-black text-slate-500">{postedDate}</p>
       </div>
 
-      <div className="p-4 lg:p-5">
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
+      <div className="p-4 lg:p-3">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,24rem)_16rem] lg:items-stretch lg:justify-center">
           <div className="min-w-0">
             {post.imageUrl ? (
               <img
                 src={post.imageUrl}
                 alt={`${post.hunterName || 'ハンター'}さんの自己紹介カード`}
                 loading="lazy"
-                className="aspect-[1.72/1] w-full rounded-2xl border border-sky-100 object-cover shadow-sm"
+                className="aspect-[1.72/1] w-full rounded-2xl border border-sky-100 object-cover shadow-sm lg:h-36 lg:aspect-auto lg:object-contain"
               />
             ) : (
-              <div className="flex aspect-[1.72/1] w-full items-center justify-center rounded-2xl border border-dashed border-sky-200 bg-sky-50 text-sm font-black text-sky-500">
+              <div className="flex aspect-[1.72/1] w-full items-center justify-center rounded-2xl border border-dashed border-sky-200 bg-sky-50 text-sm font-black text-sky-500 lg:h-36 lg:aspect-auto">
                 画像なし
               </div>
             )}
@@ -157,55 +111,18 @@ function FriendPostCard({ post, index }) {
               <CodePanel label="フレンドコード" value={post.friendCode} />
               <CodePanel label="招待コード" value={post.inviteCode} />
             </div>
-
-            <div className="mt-4 flex items-start justify-between gap-4">
-              <div className="min-w-0">
-                <h2 className="truncate text-lg font-black tracking-normal text-blue-950 lg:text-2xl">
-                  {post.hunterName || '名無しハンター'}
-                </h2>
-                <p className="mt-1 text-sm font-bold text-blue-700">
-                  {playTimes.map((time) => labelFromMap(time, playTimeLabels)).filter(Boolean).join(' / ') || 'プレイ時間未設定'}
-                </p>
-              </div>
-              <p className="shrink-0 text-right text-sm font-black text-slate-600">
-                {location || 'エリア未設定'}
-              </p>
-            </div>
-
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {weapons.length > 0 ? (
-                weapons.map((weapon) => (
-                  <span
-                    key={weapon}
-                    className="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-xs font-black text-slate-700"
-                  >
-                    {labelFromMap(weapon, weaponLabels)}
-                  </span>
-                ))
-              ) : (
-                <span className="rounded-full border border-slate-100 bg-slate-50 px-3 py-1 text-xs font-black text-slate-400">
-                  武器未設定
-                </span>
-              )}
-            </div>
-
-            {post.comment && (
-              <p className="mt-4 break-words rounded-2xl bg-slate-50 px-4 py-3 text-sm leading-relaxed text-slate-700">
-                {post.comment}
-              </p>
-            )}
           </div>
 
-          <aside className="hidden rounded-2xl border border-sky-100 bg-sky-50/70 p-4 shadow-sm lg:block">
+          <aside className="hidden rounded-2xl border border-sky-100 bg-sky-50/70 p-3 shadow-sm lg:block">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-500">
               Hunter Codes
             </p>
-            <div className="mt-3 grid gap-3">
+            <div className="mt-2 grid gap-2">
               <CodePanel label="フレンドコード" value={post.friendCode} />
               <CodePanel label="招待コード" value={post.inviteCode} />
             </div>
             {expiresAt && (
-              <p className="mt-4 text-right text-[11px] font-bold text-slate-400">
+              <p className="mt-2 text-right text-[10px] font-bold text-slate-400">
                 表示期限 {expiresAt}
               </p>
             )}
@@ -291,7 +208,7 @@ export default function FriendPostTimeline() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-300 via-sky-200 to-sky-50 px-4 pb-12 pt-5">
-      <div className="mx-auto max-w-md lg:max-w-5xl">
+      <div className="mx-auto max-w-md lg:max-w-3xl">
         <header className="mb-5">
           <div className="flex items-center justify-center">
             <div className="text-center">
@@ -332,7 +249,7 @@ export default function FriendPostTimeline() {
           </div>
         )}
 
-        <section className="space-y-4">
+        <section className="space-y-4 lg:space-y-3">
           {posts.map((post, index) => (
             <FriendPostCard key={post.id || `${post.createdAt}-${index}`} post={post} index={index} />
           ))}
