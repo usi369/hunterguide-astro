@@ -96,10 +96,10 @@ function FriendPostCard({ post, index }) {
       </div>
 
       <div className="p-4 lg:p-3">
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,22rem)_16rem] lg:items-stretch lg:justify-center">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,22rem)_16rem] lg:items-center lg:justify-center">
           <div className="min-w-0">
             {post.imageUrl ? (
-              <div className="flex aspect-[1.72/1] w-full items-center justify-center overflow-hidden rounded-2xl border border-sky-100 bg-white shadow-sm">
+              <div className="flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl border border-sky-100 bg-white shadow-sm">
                 <img
                   src={post.imageUrl}
                   alt={`${post.hunterName || 'ハンター'}さんの自己紹介カード`}
@@ -108,7 +108,7 @@ function FriendPostCard({ post, index }) {
                 />
               </div>
             ) : (
-              <div className="flex aspect-[1.72/1] w-full items-center justify-center rounded-2xl border border-dashed border-sky-200 bg-sky-50 text-sm font-black text-sky-500">
+              <div className="flex aspect-video w-full items-center justify-center rounded-2xl border border-dashed border-sky-200 bg-sky-50 text-sm font-black text-sky-500">
                 画像なし
               </div>
             )}
