@@ -8,11 +8,11 @@ interface Props {
   url?: string;
 }
 
-const { 
-  title, 
-  description = 'モンスターハンターNowのモンスター情報・武器データベース',
+const {
+  title,
+  description = 'モンハンNowのフレンド募集自己紹介カードを閲覧できます。',
   image = 'https://monchan3.xsrv.jp/og-image.png',
-  url = 'https://monchan-encyclopedia.pages.dev',
+  url = 'https://monchandb.com',
 } = Astro.props;
 ---
 
@@ -25,36 +25,30 @@ const {
     <meta name="language" content="Japanese" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="モンスターハンター,モンハンNow,モンスター,データベース" />
-    
-    {/* Open Graph */}
+    <meta name="keywords" content="モンハンNow,フレンド募集,自己紹介カード,モンちゃん" />
+
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={url} />
     <meta property="og:image" content={image} />
-    <meta property="og:site_name" content="モンハンNow DB" />
-    
-    {/* Twitter Card */}
+    <meta property="og:site_name" content="モンちゃんフレンド" />
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
-    
-    {/* Canonical */}
+
     <link rel="canonical" href={url} />
-    
-    {/* Favicon */}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    
-    {/* Google AdSense */}
+
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
       crossorigin="anonymous"></script>
   </head>
   <body>
-    <main className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-50">
+    <main class="min-h-screen bg-gradient-to-b from-sky-300 to-sky-50">
       <slot />
     </main>
   </body>
