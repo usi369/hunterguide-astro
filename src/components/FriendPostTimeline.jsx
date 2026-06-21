@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 const API_BASE_URL = 'https://monchan-friend-api.usi369.workers.dev';
+const POSTS_PAGE_SIZE = 10;
 
 const weaponLabels = {
   sword_and_shield: '片手剣',
@@ -212,8 +213,10 @@ export default function FriendPostTimeline() {
   const totalText = useMemo(() => `${posts.length}件`, [posts.length]);
 
   async function loadPosts(cursor) {
-    const params = cursor ? `?cursor=${encodeURIComponent(cursor)}` : '';
-    const response = await fetch(`${API_BASE_URL}/api/posts${params}`, {
+    const params = new URLSearchParams({ limit: String(POSTS_PAGE_SIZE) });
+    if (cursor) params.set('cursor', cursor);
+
+    const response = await fetch(`${API_BASE_URL}/api/posts?${params.toString()}`, {
       headers: { Accept: 'application/json' },
     });
 
